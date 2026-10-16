@@ -2369,7 +2369,7 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-10-15T18:54:07.844Z",
+  "updatedAt": "2026-10-16T18:51:26.350Z",
   "source": "中关村在线(ZOL)公开参考价",
   "autoCount": 80,
   "manualCount": 8,

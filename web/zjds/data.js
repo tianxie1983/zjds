@@ -1863,7 +1863,7 @@ window.PC = (function () {
     "id": "psu-650",
     "name": "长城 650W 金牌",
     "brand": "GreatWall",
-    "price": 475,
+    "price": 510,
     "power": 0,
     "watt": 650,
     "specs": [
@@ -2369,7 +2369,7 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-10-18T18:45:15.377Z",
+  "updatedAt": "2026-10-19T22:23:47.048Z",
   "source": "中关村在线(ZOL)公开参考价",
   "autoCount": 80,
   "manualCount": 8,

@@ -1,102 +1,140 @@
 #!/usr/bin/env node
-// price-fetch.js —— 按 scripts/zol-links.json 指定的 ZOL 商品页精确抓取参考价，重新生成 web/data.js
-// 设计：data/parts.js 为唯一数据源；本脚本只负责把「有精确链接」的配件价格刷新为 ZOL 实时参考价，
-//       其余配件保留 data/parts.js 中的手动价。生成结果可被前端 app.js 的「ZOL 参考报价 / 详情页跳转」功能消费。
-// 代理：优先走 ZOL_PROXY/HTTPS_PROXY 代理隧道（CI/境外 IP 被 ZOL 限流时必须），无代理回退直连。SKIP_PROXY=1 强制直连。
+// price-fetch.js —— 双源抓取：ZOL(主) + PConline(备)，按 scripts/*-links.json 精确抓参考价，生成 web/data.js
+// 设计：data/parts.js 为唯一数据源；本脚本把「有链接」的配件价格刷新为公开参考价，其余保留手动价。
+//   合并策略（双源互为备份 + 交叉校验）：
+//     - 两源都成功：差异 <15% 取均值(priceSource='dual')；≥15% 取主源 ZOL 并告警(priceSource='zol', priceConflict=true)
+//     - 仅 ZOL：priceSource='zol'（单源）
+//     - 仅 PConline：priceSource='pconline'（ZOL 失败时备用源兜底）
+//     - 都无：保留手动价 priceSource='manual'
+//   防覆盖：任一自动源成功的比例 <0.5 时不覆盖 web/data.js（疑似限流/网络异常）。
+// 代理：优先 ZOL_PROXY/HTTPS_PROXY 代理隧道（CI/境外 IP 被限流时必须），无代理回退直连。SKIP_PROXY=1 强制直连。
 // 用法: node scripts/price-fetch.js
 const fs = require('fs');
 const path = require('path');
 const { fetchZol } = require('./zol-fetch');
+const { fetchPconline } = require('./pconline-fetch');
 
-// ROOT：优先环境变量，否则用脚本所在目录的上一级（本地与 GitHub Actions 通用）
 const ROOT = process.env.REPO_ROOT || path.resolve(__dirname, '..');
-const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
 
 const data = require(path.join(ROOT, 'data/parts.js'));
 const util = require(path.join(ROOT, 'utils/format.js'));
 
-// 读取精确链接映射：{ partId: zolUrl }
-let zolLinks = {};
-try {
-  zolLinks = JSON.parse(fs.readFileSync(path.join(ROOT, 'scripts/zol-links.json'), 'utf8'));
-} catch (e) {
-  console.warn('[warn] 读取 scripts/zol-links.json 失败，将全部保留手动价:', e.message);
+function loadLinks(file) {
+  try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'scripts', file), 'utf8')); }
+  catch (e) { console.warn(`[warn] 读取 scripts/${file} 失败（该源将全部退化为手动/单源）:`, e.message); return {}; }
 }
+const zolLinks = loadLinks('zol-links.json');
+const pconlineLinks = loadLinks('pconline-links.json'); // { partId: pconlineUrl }，可为空（退化为 ZOL 单源）
 
-// 抓取单个 ZOL 商品页参考价（price-type 锚点）。统一由 scripts/zol-fetch.js 处理代理隧道、GBK 解码与限流识别。
 async function fetchZolPrice(url) {
   try {
     const r = await fetchZol(url, { timeout: 15000 });
-    if (!r.ok) {
-      console.warn('  [fetch] 响应异常:', r.status || (r.netErr ? '网络错误:' + r.err : ''), url);
-      return null;
-    }
-    if (r.price == null) {
-      console.warn('  [fetch] 未解析到参考价:', url);
-      return null;
-    }
+    if (!r.ok) { console.warn('  [zol] 响应异常:', r.status || (r.netErr ? '网络错误:' + r.err : ''), url); return null; }
+    if (r.price == null) { console.warn('  [zol] 未解析到参考价:', url); return null; }
     return r.price;
-  } catch (e) {
-    console.warn('  [fetch] 请求失败:', url, e.message);
-    return null;
+  } catch (e) { console.warn('  [zol] 请求失败:', url, e.message); return null; }
+}
+
+async function fetchPcPrice(url) {
+  try {
+    const r = await fetchPconline(url, { timeout: 15000 });
+    if (!r.ok) { console.warn('  [pconline] 响应异常:', r.status || (r.netErr ? '网络错误:' + r.err : ''), url); return null; }
+    if (r.price == null) { console.warn('  [pconline] 未解析到参考价:', url); return null; }
+    return r.price;
+  } catch (e) { console.warn('  [pconline] 请求失败:', url, e.message); return null; }
+}
+
+// 双源合并：返回 { price, source, conflict }
+function mergePrice(zol, pc) {
+  if (zol && pc) {
+    const diff = Math.abs(zol - pc) / Math.min(zol, pc);
+    if (diff < 0.15) return { price: Math.round((zol + pc) / 2), source: 'dual', conflict: false };
+    // 差异过大：以主源 ZOL 为准，标记冲突供人工复核
+    return { price: zol, source: 'zol', conflict: true };
   }
+  if (zol) return { price: zol, source: 'zol', conflict: false };
+  if (pc) return { price: pc, source: 'pconline', conflict: false }; // ZOL 缺失，备用源兜底
+  return null;
 }
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 (async () => {
   const updated = data.parts.map((p) => ({ ...p }));
-  let autoCount = 0;
-  let manualCount = 0;
-  let expectedAuto = 0; // 应抓取（有 ZOL 链接）的配件数，用于判断抓取是否被限流
+  let autoCount = 0, dualCount = 0, pcFallbackCount = 0, manualCount = 0;
+  let expectedAuto = 0; // 有任一链接（应被自动抓取）的配件数
   const report = [];
-  const cache = {}; // url -> price（同链接多配件只抓一次，省请求）
+  const conflicts = [];
+  const zolCache = {};
+  const pcCache = {};
 
   for (const part of updated) {
-    const url = zolLinks[part.id];
-    if (!url) {
+    const zolUrl = zolLinks[part.id];
+    const pcUrl = pconlineLinks[part.id];
+    if (!zolUrl && !pcUrl) {
       part.priceSource = 'manual';
       manualCount++;
       report.push(`[手动] ${part.name} -> 保留 ¥${part.price}`);
       continue;
     }
-    expectedAuto++; // 有 ZOL 链接，应被自动抓取
-    let price = cache[url];
-    if (price === undefined) {
-      price = await fetchZolPrice(url);
-      cache[url] = price; // 可能为 null（抓取失败）
-      await sleep(800);
+    expectedAuto++;
+
+    let zolPrice = null, pcPrice = null;
+    if (zolUrl) {
+      zolPrice = zolCache[zolUrl];
+      if (zolPrice === undefined) { zolPrice = await fetchZolPrice(zolUrl); zolCache[zolUrl] = zolPrice; await sleep(800); }
     }
-    if (price && price > 0) {
-      part.price = price;
-      part.priceSource = 'zol';
-      part.url = url;
+    if (pcUrl) {
+      pcPrice = pcCache[pcUrl];
+      if (pcPrice === undefined) { pcPrice = await fetchPcPrice(pcUrl); pcCache[pcUrl] = pcPrice; await sleep(1500); } // PConline 频率敏感，加大间隔
+    }
+
+    const merged = mergePrice(zolPrice, pcPrice);
+    if (merged) {
+      part.price = merged.price;
+      part.priceSource = merged.source;
+      if (merged.conflict) part.priceConflict = true;
+      // 保留主链接（优先 ZOL），便于前端「参考报价/详情页跳转」
+      part.url = zolUrl || pcUrl;
+      if (zolPrice) part.priceZol = zolPrice;
+      if (pcPrice) part.pricePconline = pcPrice;
       autoCount++;
-      report.push(`[ZOL ] ${part.name} -> ¥${price}  (${url})`);
+      if (merged.source === 'dual') dualCount++;
+      if (merged.source === 'pconline') pcFallbackCount++;
+      const tag = merged.source === 'dual' ? '双源' : (merged.source === 'pconline' ? 'PCon' : 'ZOL ');
+      let line = `[${tag}] ${part.name} -> ¥${merged.price}`;
+      if (zolPrice) line += ` (ZOL¥${zolPrice}`;
+      if (zolPrice && pcPrice) line += ` / PConline¥${pcPrice}`;
+      else if (pcPrice) line += ` (PConline¥${pcPrice}`;
+      if (zolPrice || pcPrice) line += `)`;
+      if (merged.conflict) { line += ' ⚠️双源差异≥15%，取ZOL'; conflicts.push(`${part.name}: ZOL¥${zolPrice} vs PConline¥${pcPrice}`); }
+      report.push(line);
     } else {
       part.priceSource = 'manual';
       manualCount++;
-      report.push(`[手动] ${part.name} -> 保留 ¥${part.price}  (抓取失败)`);
+      report.push(`[手动] ${part.name} -> 保留 ¥${part.price}  (两源均抓取失败)`);
     }
   }
 
-  // 防覆盖保护：若成功抓取比例过低（疑似被 ZOL 限流或网络异常），
-  // 则不覆盖 web/data.js，保留上次的完整数据，避免残缺/旧价污染站点。
+  // 防覆盖保护：任一自动源成功的比例过低（疑似限流/网络异常），不覆盖 web/data.js。
   const ratio = expectedAuto > 0 ? autoCount / expectedAuto : 1;
   if (ratio < 0.5) {
     console.error(`\n[price-fetch] ⚠️ 仅成功抓取 ${autoCount}/${expectedAuto} 款（比例 ${ratio.toFixed(2)} < 0.5）`);
-    console.error('[price-fetch] 疑似被 ZOL 限流或网络异常；为保留上次完整数据，本次不覆盖 web/data.js。');
+    console.error('[price-fetch] 疑似被限流或网络异常；为保留上次完整数据，本次不覆盖 web/data.js。');
     process.exit(1);
   }
 
   const meta = {
     updatedAt: new Date().toISOString(),
-    source: '中关村在线(ZOL)公开参考价',
+    source: '中关村在线(ZOL)+太平洋科技(PConline)公开参考价',
     autoCount,
+    dualCount,
+    pcFallbackCount,
     manualCount,
     total: updated.length,
-    note: '价格随行情波动，仅供参考；未匹配到公开报价的配件保留原价。',
+    note: '价格随行情波动，仅供参考；双源(差异<15%)取均值，未匹配到公开报价的配件保留原价。',
   };
+  if (conflicts.length) meta.priceConflicts = conflicts;
 
   // 生成 web/data.js（复用 utils/format.js 的函数，注入更新后的 parts 与 meta）
   let evSrc = util.evaluateBuild.toString().replace(/data\./g, '');
@@ -123,7 +161,8 @@ window.PC = (function () {
   const dest = path.join(ROOT, 'web', 'zjds', 'data.js');
   fs.writeFileSync(dest, out, 'utf8');
   console.log(`\n写入 ${dest}`);
-  console.log(`更新统计: 自动(ZOL) ${autoCount} 款, 手动保留 ${manualCount} 款, 共 ${updated.length} 款`);
+  console.log(`更新统计: 自动 ${autoCount} 款(双源 ${dualCount} / PConline兜底 ${pcFallbackCount} / 仅ZOL ${autoCount - dualCount - pcFallbackCount}), 手动保留 ${manualCount} 款, 共 ${updated.length} 款`);
+  if (conflicts.length) { console.log('⚠️ 双源差异≥15%（取ZOL，建议复核）:'); conflicts.forEach(c => console.log('   ' + c)); }
   console.log('--- 明细 ---');
   console.log(report.join('\n'));
 })();

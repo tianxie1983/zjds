@@ -80,7 +80,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/cpu/index1929615.shtml"
+    "url": "https://detail.zol.com.cn/cpu/index1929615.shtml",
+    "priceZol": 2499
   },
   {
     "category": "cpu",
@@ -110,7 +111,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/cpu/index1929613.shtml"
+    "url": "https://detail.zol.com.cn/cpu/index1929613.shtml",
+    "priceZol": 3299
   },
   {
     "category": "cpu",
@@ -141,7 +143,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/cpu/index1805095.shtml"
+    "url": "https://detail.zol.com.cn/cpu/index1805095.shtml",
+    "priceZol": 4999
   },
   {
     "category": "cpu",
@@ -171,7 +174,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/cpu/index1796349.shtml"
+    "url": "https://detail.zol.com.cn/cpu/index1796349.shtml",
+    "priceZol": 1239
   },
   {
     "category": "cpu",
@@ -202,7 +206,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/cpu/index1440585.shtml"
+    "url": "https://detail.zol.com.cn/cpu/index1440585.shtml",
+    "priceZol": 3099
   },
   {
     "category": "cpu",
@@ -231,8 +236,10 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/cpu/index1424741.shtml"
+    "priceSource": "dual",
+    "url": "https://detail.zol.com.cn/cpu/index1424741.shtml",
+    "priceZol": 5499,
+    "pricePconline": 5499
   },
   {
     "category": "cpu",
@@ -291,7 +298,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/cpu/index1429351.shtml"
+    "url": "https://detail.zol.com.cn/cpu/index1429351.shtml",
+    "priceZol": 2600
   },
   {
     "category": "cpu",
@@ -321,7 +329,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/cpu/index1929614.shtml"
+    "url": "https://detail.zol.com.cn/cpu/index1929614.shtml",
+    "priceZol": 2599
   },
   {
     "category": "cpu",
@@ -350,8 +359,10 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/cpu/index1440587.shtml"
+    "priceSource": "dual",
+    "url": "https://detail.zol.com.cn/cpu/index1440587.shtml",
+    "priceZol": 1549,
+    "pricePconline": 1549
   },
   {
     "category": "cpu",
@@ -381,7 +392,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/cpu/index1367038.shtml"
+    "url": "https://detail.zol.com.cn/cpu/index1367038.shtml",
+    "priceZol": 2249
   },
   {
     "category": "cpu",
@@ -411,14 +423,15 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/cpu/index1440586.shtml"
+    "url": "https://detail.zol.com.cn/cpu/index1440586.shtml",
+    "priceZol": 1899
   },
   {
     "category": "cpu",
     "id": "cpu-r7-9700x",
     "name": "AMD 锐龙 R7 9700X",
     "brand": "AMD",
-    "price": 2849,
+    "price": 2699,
     "power": 65,
     "socket": "AM5",
     "memType": "DDR5",
@@ -441,8 +454,10 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/cpu/index2018966.shtml"
+    "priceSource": "dual",
+    "url": "https://detail.zol.com.cn/cpu/index2018966.shtml",
+    "priceZol": 2849,
+    "pricePconline": 2549
   },
   {
     "category": "cpu",
@@ -501,7 +516,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/motherboard/index2103759.shtml"
+    "url": "https://detail.zol.com.cn/motherboard/index2103759.shtml",
+    "priceZol": 949
   },
   {
     "category": "motherboard",
@@ -532,7 +548,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/motherboard/index1465548.shtml"
+    "url": "https://detail.zol.com.cn/motherboard/index1465548.shtml",
+    "priceZol": 2699
   },
   {
     "category": "motherboard",
@@ -562,7 +579,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/motherboard/index2071207.shtml"
+    "url": "https://detail.zol.com.cn/motherboard/index2071207.shtml",
+    "priceZol": 999
   },
   {
     "category": "motherboard",
@@ -592,7 +610,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/motherboard/index1429433.shtml"
+    "url": "https://detail.zol.com.cn/motherboard/index1429433.shtml",
+    "priceZol": 3999
   },
   {
     "category": "motherboard",
@@ -622,7 +641,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/motherboard/index1544325.shtml"
+    "url": "https://detail.zol.com.cn/motherboard/index1544325.shtml",
+    "priceZol": 599
   },
   {
     "category": "motherboard",
@@ -652,7 +672,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/motherboard/index2103759.shtml"
+    "url": "https://detail.zol.com.cn/motherboard/index2103759.shtml",
+    "priceZol": 949
   },
   {
     "category": "motherboard",
@@ -682,7 +703,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/motherboard/index1465548.shtml"
+    "url": "https://detail.zol.com.cn/motherboard/index1465548.shtml",
+    "priceZol": 2699
   },
   {
     "category": "motherboard",
@@ -712,7 +734,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/motherboard/index1430243.shtml"
+    "url": "https://detail.zol.com.cn/motherboard/index1430243.shtml",
+    "priceZol": 1499
   },
   {
     "category": "motherboard",
@@ -743,7 +766,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/motherboard/index2071207.shtml"
+    "url": "https://detail.zol.com.cn/motherboard/index2071207.shtml",
+    "priceZol": 999
   },
   {
     "category": "motherboard",
@@ -773,7 +797,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/motherboard/index1430816.shtml"
+    "url": "https://detail.zol.com.cn/motherboard/index1430816.shtml",
+    "priceZol": 2899
   },
   {
     "category": "motherboard",
@@ -846,7 +871,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/vga/index1794057.shtml"
+    "url": "https://detail.zol.com.cn/vga/index1794057.shtml",
+    "priceZol": 2499
   },
   {
     "category": "gpu",
@@ -870,7 +896,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/vga/index1991186.shtml"
+    "url": "https://detail.zol.com.cn/vga/index1991186.shtml",
+    "priceZol": 5499
   },
   {
     "category": "gpu",
@@ -895,7 +922,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/vga/index1980451.shtml"
+    "url": "https://detail.zol.com.cn/vga/index1980451.shtml",
+    "priceZol": 8999
   },
   {
     "category": "gpu",
@@ -919,7 +947,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/vga/index2126436.shtml"
+    "url": "https://detail.zol.com.cn/vga/index2126436.shtml",
+    "priceZol": 23999
   },
   {
     "category": "gpu",
@@ -943,7 +972,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/vga/index1857616.shtml"
+    "url": "https://detail.zol.com.cn/vga/index1857616.shtml",
+    "priceZol": 5249
   },
   {
     "category": "gpu",
@@ -968,7 +998,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/vga/index1617201.shtml"
+    "url": "https://detail.zol.com.cn/vga/index1617201.shtml",
+    "priceZol": 3499
   },
   {
     "category": "gpu",
@@ -992,7 +1023,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/vga/index1511407.shtml"
+    "url": "https://detail.zol.com.cn/vga/index1511407.shtml",
+    "priceZol": 11999
   },
   {
     "category": "gpu",
@@ -1016,7 +1048,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/vga/index1978348.shtml"
+    "url": "https://detail.zol.com.cn/vga/index1978348.shtml",
+    "priceZol": 6899
   },
   {
     "category": "gpu",
@@ -1040,7 +1073,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/vga/index1433634.shtml"
+    "url": "https://detail.zol.com.cn/vga/index1433634.shtml",
+    "priceZol": 9399
   },
   {
     "category": "gpu",
@@ -1064,7 +1098,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/vga/index1653094.shtml"
+    "url": "https://detail.zol.com.cn/vga/index1653094.shtml",
+    "priceZol": 2299
   },
   {
     "category": "gpu",
@@ -1088,7 +1123,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/vga/index1968940.shtml"
+    "url": "https://detail.zol.com.cn/vga/index1968940.shtml",
+    "priceZol": 3699
   },
   {
     "category": "gpu",
@@ -1112,7 +1148,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/vga/index1437002.shtml"
+    "url": "https://detail.zol.com.cn/vga/index1437002.shtml",
+    "priceZol": 6399
   },
   {
     "category": "gpu",
@@ -1159,7 +1196,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/vga/index1950003.shtml"
+    "url": "https://detail.zol.com.cn/vga/index1950003.shtml",
+    "priceZol": 2199
   },
   {
     "category": "gpu",
@@ -1184,7 +1222,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/vga/index2141540.shtml"
+    "url": "https://detail.zol.com.cn/vga/index2141540.shtml",
+    "priceZol": 5799
   },
   {
     "category": "memory",
@@ -1209,7 +1248,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/memory/index1948453.shtml"
+    "url": "https://detail.zol.com.cn/memory/index1948453.shtml",
+    "priceZol": 479
   },
   {
     "category": "memory",
@@ -1235,7 +1275,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/memory/index1985125.shtml"
+    "url": "https://detail.zol.com.cn/memory/index1985125.shtml",
+    "priceZol": 999
   },
   {
     "category": "memory",
@@ -1260,7 +1301,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/memory/index1955978.shtml"
+    "url": "https://detail.zol.com.cn/memory/index1955978.shtml",
+    "priceZol": 799
   },
   {
     "category": "memory",
@@ -1285,7 +1327,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/memory/index1984994.shtml"
+    "url": "https://detail.zol.com.cn/memory/index1984994.shtml",
+    "priceZol": 415
   },
   {
     "category": "memory",
@@ -1310,7 +1353,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/memory/index1629095.shtml"
+    "url": "https://detail.zol.com.cn/memory/index1629095.shtml",
+    "priceZol": 759
   },
   {
     "category": "memory",
@@ -1335,7 +1379,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/memory/index1948453.shtml"
+    "url": "https://detail.zol.com.cn/memory/index1948453.shtml",
+    "priceZol": 479
   },
   {
     "category": "memory",
@@ -1360,7 +1405,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/memory/index1857413.shtml"
+    "url": "https://detail.zol.com.cn/memory/index1857413.shtml",
+    "priceZol": 299
   },
   {
     "category": "memory",
@@ -1385,7 +1431,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/memory/index1955978.shtml"
+    "url": "https://detail.zol.com.cn/memory/index1955978.shtml",
+    "priceZol": 799
   },
   {
     "category": "memory",
@@ -1410,7 +1457,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/memory/index1985151.shtml"
+    "url": "https://detail.zol.com.cn/memory/index1985151.shtml",
+    "priceZol": 1469
   },
   {
     "category": "ssd",
@@ -1435,7 +1483,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/solid_state_drive/index1432186.shtml"
+    "url": "https://detail.zol.com.cn/solid_state_drive/index1432186.shtml",
+    "priceZol": 359
   },
   {
     "category": "ssd",
@@ -1459,7 +1508,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/solid_state_drive/index1308467.shtml"
+    "url": "https://detail.zol.com.cn/solid_state_drive/index1308467.shtml",
+    "priceZol": 299
   },
   {
     "category": "ssd",
@@ -1483,7 +1533,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/solid_state_drive/index1427476.shtml"
+    "url": "https://detail.zol.com.cn/solid_state_drive/index1427476.shtml",
+    "priceZol": 659
   },
   {
     "category": "ssd",
@@ -1507,7 +1558,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/solid_state_drive/index1918447.shtml"
+    "url": "https://detail.zol.com.cn/solid_state_drive/index1918447.shtml",
+    "priceZol": 339
   },
   {
     "category": "ssd",
@@ -1531,7 +1583,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/solid_state_drive/index1380777.shtml"
+    "url": "https://detail.zol.com.cn/solid_state_drive/index1380777.shtml",
+    "priceZol": 1329
   },
   {
     "category": "ssd",
@@ -1555,7 +1608,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/solid_state_drive/index1403186.shtml"
+    "url": "https://detail.zol.com.cn/solid_state_drive/index1403186.shtml",
+    "priceZol": 679
   },
   {
     "category": "ssd",
@@ -1580,7 +1634,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/solid_state_drive/index1425885.shtml"
+    "url": "https://detail.zol.com.cn/solid_state_drive/index1425885.shtml",
+    "priceZol": 1099
   },
   {
     "category": "ssd",
@@ -1604,7 +1659,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/solid_state_drive/index1428179.shtml"
+    "url": "https://detail.zol.com.cn/solid_state_drive/index1428179.shtml",
+    "priceZol": 599
   },
   {
     "category": "ssd",
@@ -1651,7 +1707,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/cooling_product/index1424114.shtml"
+    "url": "https://detail.zol.com.cn/cooling_product/index1424114.shtml",
+    "priceZol": 89
   },
   {
     "category": "cooler",
@@ -1676,7 +1733,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/cooling_product/index2153300.shtml"
+    "url": "https://detail.zol.com.cn/cooling_product/index2153300.shtml",
+    "priceZol": 404
   },
   {
     "category": "cooler",
@@ -1696,7 +1754,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/cooling_product/index1346515.shtml"
+    "url": "https://detail.zol.com.cn/cooling_product/index1346515.shtml",
+    "priceZol": 509
   },
   {
     "category": "cooler",
@@ -1720,7 +1779,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/cooling_product/index1526210.shtml"
+    "url": "https://detail.zol.com.cn/cooling_product/index1526210.shtml",
+    "priceZol": 2199
   },
   {
     "category": "cooler",
@@ -1744,7 +1804,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/cooling_product/index1424264.shtml"
+    "url": "https://detail.zol.com.cn/cooling_product/index1424264.shtml",
+    "priceZol": 179
   },
   {
     "category": "cooler",
@@ -1768,7 +1829,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/cooling_product/index2158680.shtml"
+    "url": "https://detail.zol.com.cn/cooling_product/index2158680.shtml",
+    "priceZol": 79
   },
   {
     "category": "cooler",
@@ -1792,7 +1854,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/cooling_product/index1424636.shtml"
+    "url": "https://detail.zol.com.cn/cooling_product/index1424636.shtml",
+    "priceZol": 99
   },
   {
     "category": "cooler",
@@ -1832,7 +1895,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/cooling_product/index1429210.shtml"
+    "url": "https://detail.zol.com.cn/cooling_product/index1429210.shtml",
+    "priceZol": 699
   },
   {
     "category": "cooler",
@@ -1856,14 +1920,15 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/cooling_product/index1281413.shtml"
+    "url": "https://detail.zol.com.cn/cooling_product/index1281413.shtml",
+    "priceZol": 80
   },
   {
     "category": "psu",
     "id": "psu-650",
     "name": "长城 650W 金牌",
     "brand": "GreatWall",
-    "price": 510,
+    "price": 505,
     "power": 0,
     "watt": 650,
     "specs": [
@@ -1881,7 +1946,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/power/index1289953.shtml"
+    "url": "https://detail.zol.com.cn/power/index1289953.shtml",
+    "priceZol": 505
   },
   {
     "category": "psu",
@@ -1906,7 +1972,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/power/index1342457.shtml"
+    "url": "https://detail.zol.com.cn/power/index1342457.shtml",
+    "priceZol": 699
   },
   {
     "category": "psu",
@@ -1932,7 +1999,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/power/index1379628.shtml"
+    "url": "https://detail.zol.com.cn/power/index1379628.shtml",
+    "priceZol": 1079
   },
   {
     "category": "psu",
@@ -1957,7 +2025,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/power/index299190.shtml"
+    "url": "https://detail.zol.com.cn/power/index299190.shtml",
+    "priceZol": 899
   },
   {
     "category": "psu",
@@ -1982,7 +2051,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/power/index356028.shtml"
+    "url": "https://detail.zol.com.cn/power/index356028.shtml",
+    "priceZol": 379
   },
   {
     "category": "psu",
@@ -2007,7 +2077,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/power/index1342457.shtml"
+    "url": "https://detail.zol.com.cn/power/index1342457.shtml",
+    "priceZol": 699
   },
   {
     "category": "psu",
@@ -2033,7 +2104,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/power/index1914231.shtml"
+    "url": "https://detail.zol.com.cn/power/index1914231.shtml",
+    "priceZol": 999
   },
   {
     "category": "psu",
@@ -2058,7 +2130,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/power/index1397857.shtml"
+    "url": "https://detail.zol.com.cn/power/index1397857.shtml",
+    "priceZol": 999
   },
   {
     "category": "psu",
@@ -2083,7 +2156,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/power/index2175397.shtml"
+    "url": "https://detail.zol.com.cn/power/index2175397.shtml",
+    "priceZol": 599
   },
   {
     "category": "chassis",
@@ -2107,7 +2181,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/case/index1980292.shtml"
+    "url": "https://detail.zol.com.cn/case/index1980292.shtml",
+    "priceZol": 159
   },
   {
     "category": "chassis",
@@ -2131,7 +2206,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/case/index1948884.shtml"
+    "url": "https://detail.zol.com.cn/case/index1948884.shtml",
+    "priceZol": 1399
   },
   {
     "category": "chassis",
@@ -2179,7 +2255,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/case/index1466488.shtml"
+    "url": "https://detail.zol.com.cn/case/index1466488.shtml",
+    "priceZol": 988
   },
   {
     "category": "chassis",
@@ -2203,7 +2280,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/case/index1296011.shtml"
+    "url": "https://detail.zol.com.cn/case/index1296011.shtml",
+    "priceZol": 229
   },
   {
     "category": "chassis",
@@ -2227,7 +2305,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/case/index1980292.shtml"
+    "url": "https://detail.zol.com.cn/case/index1980292.shtml",
+    "priceZol": 159
   },
   {
     "category": "chassis",
@@ -2251,7 +2330,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/case/index1277914.shtml"
+    "url": "https://detail.zol.com.cn/case/index1277914.shtml",
+    "priceZol": 399
   },
   {
     "category": "chassis",
@@ -2276,7 +2356,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/case/index2128556.shtml"
+    "url": "https://detail.zol.com.cn/case/index2128556.shtml",
+    "priceZol": 549
   },
   {
     "category": "chassis",
@@ -2300,7 +2381,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/case/index1980591.shtml"
+    "url": "https://detail.zol.com.cn/case/index1980591.shtml",
+    "priceZol": 454
   },
   {
     "category": "chassis",
@@ -2324,7 +2406,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "url": "https://detail.zol.com.cn/case/index1971140.shtml"
+    "url": "https://detail.zol.com.cn/case/index1971140.shtml",
+    "priceZol": 499
   }
 ];
   const presets = [
@@ -2369,12 +2452,14 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-10-20T21:39:50.125Z",
-  "source": "中关村在线(ZOL)公开参考价",
+  "updatedAt": "2026-10-21T21:45:33.093Z",
+  "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
   "autoCount": 80,
+  "dualCount": 3,
+  "pcFallbackCount": 0,
   "manualCount": 8,
   "total": 88,
-  "note": "价格随行情波动，仅供参考；未匹配到公开报价的配件保留原价。"
+  "note": "价格随行情波动，仅供参考；双源(差异<15%)取均值，未匹配到公开报价的配件保留原价。"
 };
 
   function categoryOf(key) { return categories.find(c => c.key === key); }

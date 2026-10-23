@@ -2452,7 +2452,7 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-10-22T21:39:00.719Z",
+  "updatedAt": "2026-10-23T21:27:28.782Z",
   "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
   "autoCount": 80,
   "dualCount": 3,

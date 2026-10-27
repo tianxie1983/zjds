@@ -400,10 +400,9 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/cpu/index1367038.shtml",
-    "priceZol": 2249,
-    "pricePconline": 2249
+    "priceZol": 2249
   },
   {
     "category": "cpu",
@@ -2487,10 +2486,10 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-10-26T22:44:35.114Z",
+  "updatedAt": "2026-10-27T22:19:09.245Z",
   "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
   "autoCount": 83,
-  "dualCount": 20,
+  "dualCount": 19,
   "pcFallbackCount": 3,
   "manualCount": 5,
   "total": 88,

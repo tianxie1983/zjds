@@ -186,7 +186,7 @@ window.PC = (function () {
     "id": "cpu-r7-7800x3d",
     "name": "AMD 锐龙 R7 7800X3D",
     "brand": "AMD",
-    "price": 3199,
+    "price": 3099,
     "power": 120,
     "socket": "AM5",
     "memType": "DDR5",
@@ -209,10 +209,9 @@ window.PC = (function () {
         "value": "AM5"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/cpu/index1440585.shtml",
-    "priceZol": 3099,
-    "pricePconline": 3299
+    "priceZol": 3099
   },
   {
     "category": "cpu",
@@ -2486,10 +2485,10 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-10-27T22:19:09.245Z",
+  "updatedAt": "2026-10-28T22:40:21.145Z",
   "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
   "autoCount": 83,
-  "dualCount": 19,
+  "dualCount": 18,
   "pcFallbackCount": 3,
   "manualCount": 5,
   "total": 88,

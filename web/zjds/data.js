@@ -176,17 +176,16 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/cpu/index1796349.shtml",
-    "priceZol": 1239,
-    "pricePconline": 1239
+    "priceZol": 1239
   },
   {
     "category": "cpu",
     "id": "cpu-r7-7800x3d",
     "name": "AMD 锐龙 R7 7800X3D",
     "brand": "AMD",
-    "price": 3099,
+    "price": 3199,
     "power": 120,
     "socket": "AM5",
     "memType": "DDR5",
@@ -209,9 +208,10 @@ window.PC = (function () {
         "value": "AM5"
       }
     ],
-    "priceSource": "zol",
+    "priceSource": "dual",
     "url": "https://detail.zol.com.cn/cpu/index1440585.shtml",
-    "priceZol": 3099
+    "priceZol": 3099,
+    "pricePconline": 3299
   },
   {
     "category": "cpu",
@@ -399,9 +399,10 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "zol",
+    "priceSource": "dual",
     "url": "https://detail.zol.com.cn/cpu/index1367038.shtml",
-    "priceZol": 2249
+    "priceZol": 2249,
+    "pricePconline": 2249
   },
   {
     "category": "cpu",
@@ -2485,10 +2486,10 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-10-28T22:40:21.145Z",
+  "updatedAt": "2026-10-29T22:49:41.257Z",
   "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
   "autoCount": 83,
-  "dualCount": 18,
+  "dualCount": 19,
   "pcFallbackCount": 3,
   "manualCount": 5,
   "total": 88,

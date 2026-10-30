@@ -79,10 +79,9 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/cpu/index1929615.shtml",
-    "priceZol": 2499,
-    "pricePconline": 2499
+    "priceZol": 2499
   },
   {
     "category": "cpu",
@@ -176,9 +175,10 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "zol",
+    "priceSource": "dual",
     "url": "https://detail.zol.com.cn/cpu/index1796349.shtml",
-    "priceZol": 1239
+    "priceZol": 1239,
+    "pricePconline": 1239
   },
   {
     "category": "cpu",
@@ -963,10 +963,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "priceConflict": true,
     "url": "https://detail.zol.com.cn/vga/index2126436.shtml",
-    "priceZol": 23999,
-    "pricePconline": 13999
+    "priceZol": 23999
   },
   {
     "category": "gpu",
@@ -1018,10 +1016,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "priceConflict": true,
     "url": "https://detail.zol.com.cn/vga/index1617201.shtml",
-    "priceZol": 3499,
-    "pricePconline": 4299
+    "priceZol": 3499
   },
   {
     "category": "gpu",
@@ -1159,7 +1155,7 @@ window.PC = (function () {
     "id": "gpu-rx7900xt",
     "name": "蓝宝石 RX 7900 XT",
     "brand": "SAPPHIRE",
-    "price": 6149,
+    "price": 6399,
     "power": 315,
     "specs": [
       {
@@ -1175,10 +1171,9 @@ window.PC = (function () {
         "value": "4K 游戏"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index1437002.shtml",
-    "priceZol": 6399,
-    "pricePconline": 5899
+    "priceZol": 6399
   },
   {
     "category": "gpu",
@@ -2486,19 +2481,17 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-10-29T22:49:41.257Z",
+  "updatedAt": "2026-10-30T22:25:39.181Z",
   "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
   "autoCount": 83,
-  "dualCount": 19,
+  "dualCount": 18,
   "pcFallbackCount": 3,
   "manualCount": 5,
   "total": 88,
   "note": "价格随行情波动，仅供参考；双源(差异<15%)取均值，未匹配到公开报价的配件保留原价。",
   "priceConflicts": [
     "AMD 锐龙 R7 7700: ZOL¥1899 vs PConline¥2299",
-    "华硕 RTX 4090 ROG: ZOL¥23999 vs PConline¥13999",
     "蓝宝石 RX 7800 XT: ZOL¥5249 vs PConline¥4099",
-    "影驰 RTX 4060 Ti 8G: ZOL¥3499 vs PConline¥4299",
     "七彩虹 RTX 4070: ZOL¥11999 vs PConline¥4799",
     "英特尔 Arc A770 16G: ZOL¥2199 vs PConline¥3199"
   ]

@@ -79,9 +79,10 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "zol",
+    "priceSource": "dual",
     "url": "https://detail.zol.com.cn/cpu/index1929615.shtml",
-    "priceZol": 2499
+    "priceZol": 2499,
+    "pricePconline": 2499
   },
   {
     "category": "cpu",
@@ -250,7 +251,7 @@ window.PC = (function () {
     "id": "cpu-i5-14400f",
     "name": "Intel 酷睿 i5-14400F",
     "brand": "Intel",
-    "price": 1649,
+    "price": 999,
     "power": 65,
     "socket": "LGA1700",
     "memType": "DDR5",
@@ -272,9 +273,7 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "pconline",
-    "url": "https://product.pconline.com.cn/cpu/intel/2072867.html",
-    "pricePconline": 1649
+    "priceSource": "manual"
   },
   {
     "category": "cpu",
@@ -963,8 +962,10 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
+    "priceConflict": true,
     "url": "https://detail.zol.com.cn/vga/index2126436.shtml",
-    "priceZol": 23999
+    "priceZol": 23999,
+    "pricePconline": 13999
   },
   {
     "category": "gpu",
@@ -1016,8 +1017,10 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
+    "priceConflict": true,
     "url": "https://detail.zol.com.cn/vga/index1617201.shtml",
-    "priceZol": 3499
+    "priceZol": 3499,
+    "pricePconline": 4299
   },
   {
     "category": "gpu",
@@ -1155,7 +1158,7 @@ window.PC = (function () {
     "id": "gpu-rx7900xt",
     "name": "蓝宝石 RX 7900 XT",
     "brand": "SAPPHIRE",
-    "price": 6399,
+    "price": 6149,
     "power": 315,
     "specs": [
       {
@@ -1171,9 +1174,10 @@ window.PC = (function () {
         "value": "4K 游戏"
       }
     ],
-    "priceSource": "zol",
+    "priceSource": "dual",
     "url": "https://detail.zol.com.cn/vga/index1437002.shtml",
-    "priceZol": 6399
+    "priceZol": 6399,
+    "pricePconline": 5899
   },
   {
     "category": "gpu",
@@ -2481,17 +2485,19 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-10-30T22:25:39.181Z",
+  "updatedAt": "2026-10-31T21:39:47.474Z",
   "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
-  "autoCount": 83,
-  "dualCount": 18,
-  "pcFallbackCount": 3,
-  "manualCount": 5,
+  "autoCount": 82,
+  "dualCount": 20,
+  "pcFallbackCount": 2,
+  "manualCount": 6,
   "total": 88,
   "note": "价格随行情波动，仅供参考；双源(差异<15%)取均值，未匹配到公开报价的配件保留原价。",
   "priceConflicts": [
     "AMD 锐龙 R7 7700: ZOL¥1899 vs PConline¥2299",
+    "华硕 RTX 4090 ROG: ZOL¥23999 vs PConline¥13999",
     "蓝宝石 RX 7800 XT: ZOL¥5249 vs PConline¥4099",
+    "影驰 RTX 4060 Ti 8G: ZOL¥3499 vs PConline¥4299",
     "七彩虹 RTX 4070: ZOL¥11999 vs PConline¥4799",
     "英特尔 Arc A770 16G: ZOL¥2199 vs PConline¥3199"
   ]

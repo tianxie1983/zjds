@@ -111,9 +111,8 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "pconline",
     "url": "https://detail.zol.com.cn/cpu/index1929613.shtml",
-    "priceZol": 3299,
     "pricePconline": 3299
   },
   {
@@ -251,7 +250,7 @@ window.PC = (function () {
     "id": "cpu-i5-14400f",
     "name": "Intel 酷睿 i5-14400F",
     "brand": "Intel",
-    "price": 999,
+    "price": 1649,
     "power": 65,
     "socket": "LGA1700",
     "memType": "DDR5",
@@ -273,7 +272,9 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "manual"
+    "priceSource": "pconline",
+    "url": "https://product.pconline.com.cn/cpu/intel/2072867.html",
+    "pricePconline": 1649
   },
   {
     "category": "cpu",
@@ -892,7 +893,7 @@ window.PC = (function () {
     "id": "gpu-4070s",
     "name": "七彩虹 RTX 4070 SUPER",
     "brand": "Colorful",
-    "price": 5199,
+    "price": 5499,
     "power": 220,
     "specs": [
       {
@@ -908,10 +909,9 @@ window.PC = (function () {
         "value": "2K 游戏"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index1991186.shtml",
-    "priceZol": 5499,
-    "pricePconline": 4899
+    "priceZol": 5499
   },
   {
     "category": "gpu",
@@ -1106,7 +1106,7 @@ window.PC = (function () {
     "id": "gpu-rx7600",
     "name": "蓝宝石 RX 7600",
     "brand": "SAPPHIRE",
-    "price": 2249,
+    "price": 2299,
     "power": 165,
     "specs": [
       {
@@ -1122,17 +1122,16 @@ window.PC = (function () {
         "value": "1080P"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index1653094.shtml",
-    "priceZol": 2299,
-    "pricePconline": 2199
+    "priceZol": 2299
   },
   {
     "category": "gpu",
     "id": "gpu-rx7700xt",
     "name": "撼讯 RX 7700 XT",
     "brand": "PowerColor",
-    "price": 3499,
+    "price": 3699,
     "power": 245,
     "specs": [
       {
@@ -1148,10 +1147,9 @@ window.PC = (function () {
         "value": "2K 高刷"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index1968940.shtml",
-    "priceZol": 3699,
-    "pricePconline": 3299
+    "priceZol": 3699
   },
   {
     "category": "gpu",
@@ -1236,7 +1234,7 @@ window.PC = (function () {
     "id": "gpu-rx9070xt",
     "name": "撼讯 RX 9070 XT",
     "brand": "PowerColor",
-    "price": 5549,
+    "price": 5799,
     "power": 304,
     "hot": true,
     "specs": [
@@ -1253,10 +1251,9 @@ window.PC = (function () {
         "value": "2K/4K"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index2141540.shtml",
-    "priceZol": 5799,
-    "pricePconline": 5299
+    "priceZol": 5799
   },
   {
     "category": "memory",
@@ -2485,12 +2482,12 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-10-31T21:39:47.474Z",
+  "updatedAt": "2026-11-01T22:10:03.566Z",
   "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
-  "autoCount": 82,
-  "dualCount": 20,
-  "pcFallbackCount": 2,
-  "manualCount": 6,
+  "autoCount": 83,
+  "dualCount": 15,
+  "pcFallbackCount": 4,
+  "manualCount": 5,
   "total": 88,
   "note": "价格随行情波动，仅供参考；双源(差异<15%)取均值，未匹配到公开报价的配件保留原价。",
   "priceConflicts": [

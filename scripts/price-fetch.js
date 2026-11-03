@@ -98,6 +98,8 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
       part.url = zolUrl || pcUrl;
       if (zolPrice) part.priceZol = zolPrice;
       if (pcPrice) part.pricePconline = pcPrice;
+      // 单独保存 PConline 商品页链接（双源时与 ZOL 并存），供前端双源展示
+      if (pcUrl) part.pconlineUrl = pcUrl;
       autoCount++;
       if (merged.source === 'dual') dualCount++;
       if (merged.source === 'pconline') pcFallbackCount++;

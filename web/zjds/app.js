@@ -86,9 +86,15 @@
     const d = new Date(iso), p = n => ('0' + n).slice(-2);
     return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`;
   }
-  // 价格来源标记：ZOL 自动抓取价 vs 手动维护价 vs 我的维护价
+  // 价格来源标记：双源校验 / ZOL / PConline / 手动 / 我的维护价
   function srcTag(p) {
     if (p.overridden) return `<span class="src-tag mine">我维护</span>`;
+    if (p.priceSource === 'dual') {
+      const diff = (p.priceZol && p.pricePconline && p.priceZol !== p.pricePconline)
+        ? ` ${p.priceZol}/${p.pricePconline}` : '';
+      return `<span class="src-tag dual">双源校验${diff}</span>`;
+    }
+    if (p.priceSource === 'pconline') return `<span class="src-tag pc">PConline</span>`;
     if (p.priceSource === 'zol') {
       const rng = (p.priceRange && p.priceRange[0] !== p.priceRange[1])
         ? ` ¥${p.priceRange[0]}~${p.priceRange[1]}` : '';
@@ -220,7 +226,9 @@
     if (!p) { goHome(); return; }
     const cat = PC.categoryOf(p.category);
     const base = PC.baseById(state.partId) || p;
-    const srcLabel = p.overridden ? '我的维护价' : (p.priceSource === 'zol' ? 'ZOL 参考报价' : '参考报价');
+    const srcLabel = p.overridden ? '我的维护价'
+      : (p.priceSource === 'dual' ? '双源参考报价（ZOL + PConline 交叉校验）'
+        : (p.priceSource === 'pconline' ? 'PConline 参考报价' : 'ZOL 参考报价'));
     const specs = (p.specs || []).map(s =>
       `<div class="spec-row"><div class="spec-label">${esc(s.label)}</div><div class="spec-value">${esc(s.value)}</div></div>`).join('');
     view.innerHTML = `
@@ -238,7 +246,10 @@
         ${p.priceSource === 'zol' && p.priceRange ? `<div class="price-range">区间 ¥${p.priceRange[0]} ~ ¥${p.priceRange[1]}</div>` : ''}
         ${p.overridden && p.overrideNote ? `<div class="price-note">备注：${esc(p.overrideNote)}</div>` : ''}
         <div class="price-edit" data-action="manual:${p.id}">✎ ${p.overridden ? '修改我的维护价' : '手动维护价 ›'}</div>
-        ${p.priceSource === 'zol' && p.url ? `<a class="price-link" href="${esc(p.url)}" target="_blank" rel="noopener">查看 ZOL 商品页 ›</a>` : ''}
+        <div class="price-links">
+        ${(p.priceSource === 'zol' || p.priceSource === 'dual') && p.url ? `<a class="price-link" href="${esc(p.url)}" target="_blank" rel="noopener">查看 ZOL 商品页 ›</a>` : ''}
+        ${p.pconlineUrl ? `<a class="price-link pc" href="${esc(p.pconlineUrl)}" target="_blank" rel="noopener">查看 PConline 报价 ›</a>` : ''}
+        </div>
       </div>
       <div class="section-title">规格参数</div>
       <div class="spec card">${specs}</div>
@@ -258,7 +269,7 @@
       return { cat, part };
     });
     const res = PC.evaluateBuild(sel);
-    const liveCount = rows.filter(r => r.part && r.part.priceSource === 'zol').length;
+    const liveCount = rows.filter(r => r.part && !r.part.overridden && r.part.priceSource !== 'manual').length;
     const rowHtml = rows.map(({ cat, part }) => {
       if (part) {
         return `<div class="row card">

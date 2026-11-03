@@ -81,9 +81,9 @@ window.PC = (function () {
     ],
     "priceSource": "dual",
     "url": "https://detail.zol.com.cn/cpu/index1929615.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/1971387.html",
     "priceZol": 2499,
-    "pricePconline": 2499
+    "pricePconline": 2499,
+    "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/1971387.html"
   },
   {
     "category": "cpu",
@@ -112,10 +112,11 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "pconline",
+    "priceSource": "dual",
     "url": "https://detail.zol.com.cn/cpu/index1929613.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/1971307.html",
-    "pricePconline": 3299
+    "priceZol": 3299,
+    "pricePconline": 3299,
+    "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/1971307.html"
   },
   {
     "category": "cpu",
@@ -147,9 +148,9 @@ window.PC = (function () {
     ],
     "priceSource": "dual",
     "url": "https://detail.zol.com.cn/cpu/index1805095.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/1971027.html",
     "priceZol": 4999,
-    "pricePconline": 4799
+    "pricePconline": 4799,
+    "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/1971027.html"
   },
   {
     "category": "cpu",
@@ -180,9 +181,9 @@ window.PC = (function () {
     ],
     "priceSource": "dual",
     "url": "https://detail.zol.com.cn/cpu/index1796349.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/1892007.html",
     "priceZol": 1239,
-    "pricePconline": 1239
+    "pricePconline": 1239,
+    "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/1892007.html"
   },
   {
     "category": "cpu",
@@ -214,9 +215,9 @@ window.PC = (function () {
     ],
     "priceSource": "dual",
     "url": "https://detail.zol.com.cn/cpu/index1440585.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/1778027.html",
     "priceZol": 3099,
-    "pricePconline": 3299
+    "pricePconline": 3299,
+    "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/1778027.html"
   },
   {
     "category": "cpu",
@@ -247,9 +248,9 @@ window.PC = (function () {
     ],
     "priceSource": "dual",
     "url": "https://detail.zol.com.cn/cpu/index1424741.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/1635367.html",
     "priceZol": 5499,
-    "pricePconline": 5499
+    "pricePconline": 5499,
+    "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/1635367.html"
   },
   {
     "category": "cpu",
@@ -280,15 +281,15 @@ window.PC = (function () {
     ],
     "priceSource": "pconline",
     "url": "https://product.pconline.com.cn/cpu/intel/2072867.html",
-    "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/2072867.html",
-    "pricePconline": 1649
+    "pricePconline": 1649,
+    "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/2072867.html"
   },
   {
     "category": "cpu",
     "id": "cpu-i5-13600kf",
     "name": "Intel 酷睿 i5-13600KF",
     "brand": "Intel",
-    "price": 2550,
+    "price": 2600,
     "power": 181,
     "socket": "LGA1700",
     "memType": "DDR5",
@@ -310,11 +311,10 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/cpu/index1429351.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/1647467.html",
     "priceZol": 2600,
-    "pricePconline": 2499
+    "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/1647467.html"
   },
   {
     "category": "cpu",
@@ -345,9 +345,9 @@ window.PC = (function () {
     ],
     "priceSource": "dual",
     "url": "https://detail.zol.com.cn/cpu/index1929614.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/1971327.html",
     "priceZol": 2599,
-    "pricePconline": 2599
+    "pricePconline": 2599,
+    "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/1971327.html"
   },
   {
     "category": "cpu",
@@ -378,9 +378,9 @@ window.PC = (function () {
     ],
     "priceSource": "dual",
     "url": "https://detail.zol.com.cn/cpu/index1440587.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/1710047.html",
     "priceZol": 1549,
-    "pricePconline": 1549
+    "pricePconline": 1549,
+    "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/1710047.html"
   },
   {
     "category": "cpu",
@@ -411,9 +411,9 @@ window.PC = (function () {
     ],
     "priceSource": "dual",
     "url": "https://detail.zol.com.cn/cpu/index1367038.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/1635328.html",
     "priceZol": 2249,
-    "pricePconline": 2249
+    "pricePconline": 2249,
+    "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/1635328.html"
   },
   {
     "category": "cpu",
@@ -445,9 +445,9 @@ window.PC = (function () {
     "priceSource": "zol",
     "priceConflict": true,
     "url": "https://detail.zol.com.cn/cpu/index1440586.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/1710027.html",
     "priceZol": 1899,
-    "pricePconline": 2299
+    "pricePconline": 2299,
+    "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/1710027.html"
   },
   {
     "category": "cpu",
@@ -479,9 +479,9 @@ window.PC = (function () {
     ],
     "priceSource": "dual",
     "url": "https://detail.zol.com.cn/cpu/index2018966.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/2248520.html",
     "priceZol": 2849,
-    "pricePconline": 2549
+    "pricePconline": 2549,
+    "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/2248520.html"
   },
   {
     "category": "cpu",
@@ -512,8 +512,8 @@ window.PC = (function () {
     ],
     "priceSource": "pconline",
     "url": "https://product.pconline.com.cn/cpu/amd/2248519.html",
-    "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/2248519.html",
-    "pricePconline": 3399
+    "pricePconline": 3399,
+    "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/2248519.html"
   },
   {
     "category": "motherboard",
@@ -620,7 +620,7 @@ window.PC = (function () {
     "memType": "DDR5",
     "specs": [
       {
-        "label": "芯片���",
+        "label": "芯片组",
         "value": "AMD X670E"
       },
       {
@@ -899,16 +899,16 @@ window.PC = (function () {
     ],
     "priceSource": "dual",
     "url": "https://detail.zol.com.cn/vga/index1794057.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/vga/galaxy/1867547.html",
     "priceZol": 2499,
-    "pricePconline": 2699
+    "pricePconline": 2699,
+    "pconlineUrl": "https://product.pconline.com.cn/vga/galaxy/1867547.html"
   },
   {
     "category": "gpu",
     "id": "gpu-4070s",
     "name": "七彩虹 RTX 4070 SUPER",
     "brand": "Colorful",
-    "price": 5499,
+    "price": 5199,
     "power": 220,
     "specs": [
       {
@@ -924,17 +924,18 @@ window.PC = (function () {
         "value": "2K 游戏"
       }
     ],
-    "priceSource": "zol",
+    "priceSource": "dual",
     "url": "https://detail.zol.com.cn/vga/index1991186.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/vga/colorful/2089507.html",
-    "priceZol": 5499
+    "priceZol": 5499,
+    "pricePconline": 4899,
+    "pconlineUrl": "https://product.pconline.com.cn/vga/colorful/2089507.html"
   },
   {
     "category": "gpu",
     "id": "gpu-4080s",
     "name": "微星 RTX 4080 SUPER",
     "brand": "MSI",
-    "price": 8549,
+    "price": 8999,
     "power": 320,
     "hot": true,
     "specs": [
@@ -951,11 +952,10 @@ window.PC = (function () {
         "value": "4K 游戏"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index1980451.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/vga/msi/2149719.html",
     "priceZol": 8999,
-    "pricePconline": 8099
+    "pconlineUrl": "https://product.pconline.com.cn/vga/msi/2149719.html"
   },
   {
     "category": "gpu",
@@ -981,9 +981,9 @@ window.PC = (function () {
     "priceSource": "zol",
     "priceConflict": true,
     "url": "https://detail.zol.com.cn/vga/index2126436.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/vga/axgaming/1664967.html",
     "priceZol": 23999,
-    "pricePconline": 13999
+    "pricePconline": 13999,
+    "pconlineUrl": "https://product.pconline.com.cn/vga/axgaming/1664967.html"
   },
   {
     "category": "gpu",
@@ -1009,9 +1009,9 @@ window.PC = (function () {
     "priceSource": "zol",
     "priceConflict": true,
     "url": "https://detail.zol.com.cn/vga/index1857616.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/vga/sapphire/1976107.html",
     "priceZol": 5249,
-    "pricePconline": 4099
+    "pricePconline": 4099,
+    "pconlineUrl": "https://product.pconline.com.cn/vga/sapphire/1976107.html"
   },
   {
     "category": "gpu",
@@ -1038,9 +1038,9 @@ window.PC = (function () {
     "priceSource": "zol",
     "priceConflict": true,
     "url": "https://detail.zol.com.cn/vga/index1617201.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/vga/galaxy/2223119.html",
     "priceZol": 3499,
-    "pricePconline": 4299
+    "pricePconline": 4299,
+    "pconlineUrl": "https://product.pconline.com.cn/vga/galaxy/2223119.html"
   },
   {
     "category": "gpu",
@@ -1066,9 +1066,9 @@ window.PC = (function () {
     "priceSource": "zol",
     "priceConflict": true,
     "url": "https://detail.zol.com.cn/vga/index1511407.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/vga/colorful/1787907.html",
     "priceZol": 11999,
-    "pricePconline": 4799
+    "pricePconline": 4799,
+    "pconlineUrl": "https://product.pconline.com.cn/vga/colorful/1787907.html"
   },
   {
     "category": "gpu",
@@ -1093,9 +1093,9 @@ window.PC = (function () {
     ],
     "priceSource": "dual",
     "url": "https://detail.zol.com.cn/vga/index1978348.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/vga/msi/2413859.html",
     "priceZol": 6899,
-    "pricePconline": 6499
+    "pricePconline": 6499,
+    "pconlineUrl": "https://product.pconline.com.cn/vga/msi/2413859.html"
   },
   {
     "category": "gpu",
@@ -1120,16 +1120,16 @@ window.PC = (function () {
     ],
     "priceSource": "dual",
     "url": "https://detail.zol.com.cn/vga/index1433634.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/vga/galaxy/1853987.html",
     "priceZol": 9399,
-    "pricePconline": 9499
+    "pricePconline": 9499,
+    "pconlineUrl": "https://product.pconline.com.cn/vga/galaxy/1853987.html"
   },
   {
     "category": "gpu",
     "id": "gpu-rx7600",
     "name": "蓝宝石 RX 7600",
     "brand": "SAPPHIRE",
-    "price": 2299,
+    "price": 2249,
     "power": 165,
     "specs": [
       {
@@ -1145,17 +1145,18 @@ window.PC = (function () {
         "value": "1080P"
       }
     ],
-    "priceSource": "zol",
+    "priceSource": "dual",
     "url": "https://detail.zol.com.cn/vga/index1653094.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/vga/sapphire/1935947.html",
-    "priceZol": 2299
+    "priceZol": 2299,
+    "pricePconline": 2199,
+    "pconlineUrl": "https://product.pconline.com.cn/vga/sapphire/1935947.html"
   },
   {
     "category": "gpu",
     "id": "gpu-rx7700xt",
     "name": "撼讯 RX 7700 XT",
     "brand": "PowerColor",
-    "price": 3699,
+    "price": 3499,
     "power": 245,
     "specs": [
       {
@@ -1171,10 +1172,11 @@ window.PC = (function () {
         "value": "2K 高刷"
       }
     ],
-    "priceSource": "zol",
+    "priceSource": "dual",
     "url": "https://detail.zol.com.cn/vga/index1968940.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/vga/24472/2242339.html",
-    "priceZol": 3699
+    "priceZol": 3699,
+    "pricePconline": 3299,
+    "pconlineUrl": "https://product.pconline.com.cn/vga/24472/2242339.html"
   },
   {
     "category": "gpu",
@@ -1199,9 +1201,9 @@ window.PC = (function () {
     ],
     "priceSource": "dual",
     "url": "https://detail.zol.com.cn/vga/index1437002.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/vga/sapphire/2097627.html",
     "priceZol": 6399,
-    "pricePconline": 5899
+    "pricePconline": 5899,
+    "pconlineUrl": "https://product.pconline.com.cn/vga/sapphire/2097627.html"
   },
   {
     "category": "gpu",
@@ -1226,8 +1228,8 @@ window.PC = (function () {
     ],
     "priceSource": "pconline",
     "url": "https://product.pconline.com.cn/vga/sapphire/1704007.html",
-    "pconlineUrl": "https://product.pconline.com.cn/vga/sapphire/1704007.html",
-    "pricePconline": 9999
+    "pricePconline": 9999,
+    "pconlineUrl": "https://product.pconline.com.cn/vga/sapphire/1704007.html"
   },
   {
     "category": "gpu",
@@ -1253,16 +1255,16 @@ window.PC = (function () {
     "priceSource": "zol",
     "priceConflict": true,
     "url": "https://detail.zol.com.cn/vga/index1950003.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/vga/intel/1656987.html",
     "priceZol": 2199,
-    "pricePconline": 3199
+    "pricePconline": 3199,
+    "pconlineUrl": "https://product.pconline.com.cn/vga/intel/1656987.html"
   },
   {
     "category": "gpu",
     "id": "gpu-rx9070xt",
     "name": "撼讯 RX 9070 XT",
     "brand": "PowerColor",
-    "price": 5799,
+    "price": 5549,
     "power": 304,
     "hot": true,
     "specs": [
@@ -1279,10 +1281,11 @@ window.PC = (function () {
         "value": "2K/4K"
       }
     ],
-    "priceSource": "zol",
+    "priceSource": "dual",
     "url": "https://detail.zol.com.cn/vga/index2141540.shtml",
-    "pconlineUrl": "https://product.pconline.com.cn/vga/24472/2766359.html",
-    "priceZol": 5799
+    "priceZol": 5799,
+    "pricePconline": 5299,
+    "pconlineUrl": "https://product.pconline.com.cn/vga/24472/2766359.html"
   },
   {
     "category": "memory",
@@ -1455,7 +1458,7 @@ window.PC = (function () {
         "value": "16GB (8G×2)"
       },
       {
-        "label": "���率",
+        "label": "频率",
         "value": "5600MHz"
       },
       {
@@ -1650,7 +1653,7 @@ window.PC = (function () {
     "id": "ssd-1t-ti5000",
     "name": "致态 TiPlus5000 1TB",
     "brand": "ZhiTai",
-    "price": 679,
+    "price": 739,
     "power": 6,
     "specs": [
       {
@@ -1668,7 +1671,7 @@ window.PC = (function () {
     ],
     "priceSource": "zol",
     "url": "https://detail.zol.com.cn/solid_state_drive/index1403186.shtml",
-    "priceZol": 679
+    "priceZol": 739
   },
   {
     "category": "ssd",
@@ -1926,7 +1929,7 @@ window.PC = (function () {
     "specs": [
       {
         "label": "类型",
-        "value": "240 一��水冷"
+        "value": "240 一体水冷"
       },
       {
         "label": "适用",
@@ -1996,7 +1999,7 @@ window.PC = (function () {
         "value": "650W"
       },
       {
-        "label": "认���",
+        "label": "认证",
         "value": "80PLUS 金牌"
       },
       {
@@ -2511,11 +2514,11 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-11-01T22:10:03.566Z",
+  "updatedAt": "2026-11-03T23:28:02.452Z",
   "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
   "autoCount": 83,
-  "dualCount": 15,
-  "pcFallbackCount": 4,
+  "dualCount": 18,
+  "pcFallbackCount": 3,
   "manualCount": 5,
   "total": 88,
   "note": "价格随行情波动，仅供参考；双源(差异<15%)取均值，未匹配到公开报价的配件保留原价。",

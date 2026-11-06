@@ -184,6 +184,8 @@ button { font-family: inherit; }
 .data-bar { margin: 10px 12px 0; padding: 9px 12px; background: linear-gradient(90deg,#eef3ff,#f5f8ff); border: 1px solid #dbe5ff; border-radius: 10px; font-size: 11.5px; color: #4a5568; line-height: 1.5; }
 .src-tag { display: inline-block; margin-top: 6px; padding: 1px 7px; border-radius: 999px; font-size: 10.5px; font-weight: 600; }
 .src-tag.zol { background: #e8f6ee; color: var(--ok); border: 1px solid #bfe6cd; }
+.src-tag.dual { background: #e7f0ff; color: #2563eb; border: 1px solid #bcd2ff; }
+.src-tag.pc { background: #f1eaff; color: #7c3aed; border: 1px solid #d8c4ff; }
 .src-tag.manual { background: #fff3e6; color: #c97a16; border: 1px solid #f3d9b3; }
 .src-tag.mine { background: #eef0ff; color: var(--primary); border: 1px solid #c5cbff; }
 .price-range { margin-top: 4px; font-size: 12px; color: var(--text-sub); }
@@ -193,8 +195,11 @@ button { font-family: inherit; }
 /* 手动维护价：可点击入口 */
 .price-edit { margin-top: 10px; display: inline-flex; align-items: center; gap: 4px; padding: 6px 12px; background: #f3f5ff; color: var(--primary); border: 1px solid #c5cbff; border-radius: 999px; font-size: 12px; font-weight: 600; cursor: pointer; user-select: none; }
 .price-edit:active { background: #e6e9ff; }
-.price-link { margin-top: 10px; margin-left: 8px; display: inline-flex; align-items: center; gap: 2px; padding: 6px 12px; background: #eafaf0; color: #1a8a4a; border: 1px solid #b6e3c8; border-radius: 999px; font-size: 12px; font-weight: 600; text-decoration: none; }
+.price-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; align-items: center; }
+.price-link { margin-top: 0; display: inline-flex; align-items: center; gap: 2px; padding: 6px 12px; background: #eafaf0; color: #1a8a4a; border: 1px solid #b6e3c8; border-radius: 999px; font-size: 12px; font-weight: 600; text-decoration: none; }
 .price-link:active { background: #d8f3e4; }
+.price-link.pc { background: #f3edff; color: #7c3aed; border: 1px solid #d8c4ff; }
+.price-link.pc:active { background: #e6dcff; }
 
 /* ---------- 手动维护价编辑器 ---------- */
 .editor-mask { position: fixed; inset: 0; background: rgba(0,0,0,.45); display: flex; align-items: flex-end; justify-content: center; z-index: 60; }

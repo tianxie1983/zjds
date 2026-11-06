@@ -936,7 +936,7 @@ window.PC = (function () {
     "id": "gpu-4080s",
     "name": "微星 RTX 4080 SUPER",
     "brand": "MSI",
-    "price": 8999,
+    "price": 8549,
     "power": 320,
     "hot": true,
     "specs": [
@@ -953,9 +953,10 @@ window.PC = (function () {
         "value": "4K 游戏"
       }
     ],
-    "priceSource": "zol",
+    "priceSource": "dual",
     "url": "https://detail.zol.com.cn/vga/index1980451.shtml",
     "priceZol": 8999,
+    "pricePconline": 8099,
     "pconlineUrl": "https://product.pconline.com.cn/vga/msi/2149719.html"
   },
   {
@@ -1184,7 +1185,7 @@ window.PC = (function () {
     "id": "gpu-rx7900xt",
     "name": "蓝宝石 RX 7900 XT",
     "brand": "SAPPHIRE",
-    "price": 6399,
+    "price": 6149,
     "power": 315,
     "specs": [
       {
@@ -1200,9 +1201,10 @@ window.PC = (function () {
         "value": "4K 游戏"
       }
     ],
-    "priceSource": "zol",
+    "priceSource": "dual",
     "url": "https://detail.zol.com.cn/vga/index1437002.shtml",
     "priceZol": 6399,
+    "pricePconline": 5899,
     "pconlineUrl": "https://product.pconline.com.cn/vga/sapphire/2097627.html"
   },
   {
@@ -2514,10 +2516,10 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-11-05T23:43:01.287Z",
+  "updatedAt": "2026-11-06T23:13:32.339Z",
   "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
   "autoCount": 83,
-  "dualCount": 18,
+  "dualCount": 20,
   "pcFallbackCount": 3,
   "manualCount": 5,
   "total": 88,

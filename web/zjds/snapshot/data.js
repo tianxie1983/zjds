@@ -2183,7 +2183,7 @@ window.PC = (function () {
         "value": "1000W"
       },
       {
-        "label": "���证",
+        "label": "认证",
         "value": "80PLUS 金牌"
       },
       {
@@ -2515,7 +2515,7 @@ window.PC = (function () {
 ];
   const meta = {
   "updatedAt": "2026-11-05T23:43:01.287Z",
-  "source": "中关村在线(ZOL)+太平洋科技(PConline)公��参考价",
+  "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
   "autoCount": 83,
   "dualCount": 18,
   "pcFallbackCount": 3,

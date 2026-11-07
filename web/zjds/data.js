@@ -79,10 +79,9 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/cpu/index1929615.shtml",
     "priceZol": 2499,
-    "pricePconline": 2499,
     "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/1971387.html"
   },
   {
@@ -909,7 +908,7 @@ window.PC = (function () {
     "id": "gpu-4070s",
     "name": "七彩虹 RTX 4070 SUPER",
     "brand": "Colorful",
-    "price": 5199,
+    "price": 5499,
     "power": 220,
     "specs": [
       {
@@ -925,10 +924,9 @@ window.PC = (function () {
         "value": "2K 游戏"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index1991186.shtml",
     "priceZol": 5499,
-    "pricePconline": 4899,
     "pconlineUrl": "https://product.pconline.com.cn/vga/colorful/2089507.html"
   },
   {
@@ -1066,10 +1064,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "priceConflict": true,
     "url": "https://detail.zol.com.cn/vga/index1511407.shtml",
     "priceZol": 11999,
-    "pricePconline": 4799,
     "pconlineUrl": "https://product.pconline.com.cn/vga/colorful/1787907.html"
   },
   {
@@ -2516,10 +2512,10 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-11-06T23:13:32.339Z",
+  "updatedAt": "2026-11-07T21:55:47.506Z",
   "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
   "autoCount": 83,
-  "dualCount": 20,
+  "dualCount": 18,
   "pcFallbackCount": 3,
   "manualCount": 5,
   "total": 88,
@@ -2529,7 +2525,6 @@ window.PC = (function () {
     "华硕 RTX 4090 ROG: ZOL¥23999 vs PConline¥13999",
     "蓝宝石 RX 7800 XT: ZOL¥5249 vs PConline¥4099",
     "影驰 RTX 4060 Ti 8G: ZOL¥3499 vs PConline¥4299",
-    "七彩虹 RTX 4070: ZOL¥11999 vs PConline¥4799",
     "英特尔 Arc A770 16G: ZOL¥2199 vs PConline¥3199"
   ]
 };

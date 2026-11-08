@@ -79,9 +79,10 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "zol",
+    "priceSource": "dual",
     "url": "https://detail.zol.com.cn/cpu/index1929615.shtml",
     "priceZol": 2499,
+    "pricePconline": 2499,
     "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/1971387.html"
   },
   {
@@ -908,7 +909,7 @@ window.PC = (function () {
     "id": "gpu-4070s",
     "name": "七彩虹 RTX 4070 SUPER",
     "brand": "Colorful",
-    "price": 5499,
+    "price": 5199,
     "power": 220,
     "specs": [
       {
@@ -924,9 +925,10 @@ window.PC = (function () {
         "value": "2K 游戏"
       }
     ],
-    "priceSource": "zol",
+    "priceSource": "dual",
     "url": "https://detail.zol.com.cn/vga/index1991186.shtml",
     "priceZol": 5499,
+    "pricePconline": 4899,
     "pconlineUrl": "https://product.pconline.com.cn/vga/colorful/2089507.html"
   },
   {
@@ -1262,7 +1264,7 @@ window.PC = (function () {
     "id": "gpu-rx9070xt",
     "name": "撼讯 RX 9070 XT",
     "brand": "PowerColor",
-    "price": 5549,
+    "price": 5799,
     "power": 304,
     "hot": true,
     "specs": [
@@ -1279,10 +1281,9 @@ window.PC = (function () {
         "value": "2K/4K"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index2141540.shtml",
     "priceZol": 5799,
-    "pricePconline": 5299,
     "pconlineUrl": "https://product.pconline.com.cn/vga/24472/2766359.html"
   },
   {
@@ -1988,7 +1989,7 @@ window.PC = (function () {
     "id": "psu-650",
     "name": "长城 650W 金牌",
     "brand": "GreatWall",
-    "price": 505,
+    "price": 509,
     "power": 0,
     "watt": 650,
     "specs": [
@@ -2007,7 +2008,7 @@ window.PC = (function () {
     ],
     "priceSource": "zol",
     "url": "https://detail.zol.com.cn/power/index1289953.shtml",
-    "priceZol": 505
+    "priceZol": 509
   },
   {
     "category": "psu",
@@ -2512,10 +2513,10 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-11-07T21:55:47.506Z",
+  "updatedAt": "2026-11-08T22:10:26.899Z",
   "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
   "autoCount": 83,
-  "dualCount": 18,
+  "dualCount": 19,
   "pcFallbackCount": 3,
   "manualCount": 5,
   "total": 88,

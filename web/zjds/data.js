@@ -289,7 +289,7 @@ window.PC = (function () {
     "id": "cpu-i5-13600kf",
     "name": "Intel 酷睿 i5-13600KF",
     "brand": "Intel",
-    "price": 2550,
+    "price": 2600,
     "power": 181,
     "socket": "LGA1700",
     "memType": "DDR5",
@@ -311,10 +311,9 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/cpu/index1429351.shtml",
     "priceZol": 2600,
-    "pricePconline": 2499,
     "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/1647467.html"
   },
   {
@@ -881,7 +880,7 @@ window.PC = (function () {
     "id": "gpu-4060",
     "name": "影驰 RTX 4060 金属大师",
     "brand": "GALAX",
-    "price": 2599,
+    "price": 2499,
     "power": 115,
     "hot": true,
     "specs": [
@@ -898,10 +897,9 @@ window.PC = (function () {
         "value": "1080P 游戏"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index1794057.shtml",
     "priceZol": 2499,
-    "pricePconline": 2699,
     "pconlineUrl": "https://product.pconline.com.cn/vga/galaxy/1867547.html"
   },
   {
@@ -1066,8 +1064,10 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
+    "priceConflict": true,
     "url": "https://detail.zol.com.cn/vga/index1511407.shtml",
     "priceZol": 11999,
+    "pricePconline": 4799,
     "pconlineUrl": "https://product.pconline.com.cn/vga/colorful/1787907.html"
   },
   {
@@ -1264,7 +1264,7 @@ window.PC = (function () {
     "id": "gpu-rx9070xt",
     "name": "撼讯 RX 9070 XT",
     "brand": "PowerColor",
-    "price": 5799,
+    "price": 5549,
     "power": 304,
     "hot": true,
     "specs": [
@@ -1281,9 +1281,10 @@ window.PC = (function () {
         "value": "2K/4K"
       }
     ],
-    "priceSource": "zol",
+    "priceSource": "dual",
     "url": "https://detail.zol.com.cn/vga/index2141540.shtml",
     "priceZol": 5799,
+    "pricePconline": 5299,
     "pconlineUrl": "https://product.pconline.com.cn/vga/24472/2766359.html"
   },
   {
@@ -2513,10 +2514,10 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-11-08T22:10:26.899Z",
+  "updatedAt": "2026-11-10T01:36:03.794Z",
   "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
   "autoCount": 83,
-  "dualCount": 19,
+  "dualCount": 18,
   "pcFallbackCount": 3,
   "manualCount": 5,
   "total": 88,
@@ -2526,6 +2527,7 @@ window.PC = (function () {
     "华硕 RTX 4090 ROG: ZOL¥23999 vs PConline¥13999",
     "蓝宝石 RX 7800 XT: ZOL¥5249 vs PConline¥4099",
     "影驰 RTX 4060 Ti 8G: ZOL¥3499 vs PConline¥4299",
+    "七彩虹 RTX 4070: ZOL¥11999 vs PConline¥4799",
     "英特尔 Arc A770 16G: ZOL¥2199 vs PConline¥3199"
   ]
 };

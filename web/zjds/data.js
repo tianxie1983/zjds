@@ -257,7 +257,7 @@ window.PC = (function () {
     "id": "cpu-i5-14400f",
     "name": "Intel 酷睿 i5-14400F",
     "brand": "Intel",
-    "price": 1649,
+    "price": 999,
     "power": 65,
     "socket": "LGA1700",
     "memType": "DDR5",
@@ -279,17 +279,14 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "pconline",
-    "url": "https://product.pconline.com.cn/cpu/intel/2072867.html",
-    "pricePconline": 1649,
-    "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/2072867.html"
+    "priceSource": "manual"
   },
   {
     "category": "cpu",
     "id": "cpu-i5-13600kf",
     "name": "Intel 酷睿 i5-13600KF",
     "brand": "Intel",
-    "price": 2600,
+    "price": 2550,
     "power": 181,
     "socket": "LGA1700",
     "memType": "DDR5",
@@ -311,9 +308,10 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "zol",
+    "priceSource": "dual",
     "url": "https://detail.zol.com.cn/cpu/index1429351.shtml",
     "priceZol": 2600,
+    "pricePconline": 2499,
     "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/1647467.html"
   },
   {
@@ -880,7 +878,7 @@ window.PC = (function () {
     "id": "gpu-4060",
     "name": "影驰 RTX 4060 金属大师",
     "brand": "GALAX",
-    "price": 2499,
+    "price": 2599,
     "power": 115,
     "hot": true,
     "specs": [
@@ -897,9 +895,10 @@ window.PC = (function () {
         "value": "1080P 游戏"
       }
     ],
-    "priceSource": "zol",
+    "priceSource": "dual",
     "url": "https://detail.zol.com.cn/vga/index1794057.shtml",
     "priceZol": 2499,
+    "pricePconline": 2699,
     "pconlineUrl": "https://product.pconline.com.cn/vga/galaxy/1867547.html"
   },
   {
@@ -1156,7 +1155,7 @@ window.PC = (function () {
     "id": "gpu-rx7700xt",
     "name": "撼讯 RX 7700 XT",
     "brand": "PowerColor",
-    "price": 3499,
+    "price": 3699,
     "power": 245,
     "specs": [
       {
@@ -1172,10 +1171,9 @@ window.PC = (function () {
         "value": "2K 高刷"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index1968940.shtml",
     "priceZol": 3699,
-    "pricePconline": 3299,
     "pconlineUrl": "https://product.pconline.com.cn/vga/24472/2242339.html"
   },
   {
@@ -1183,7 +1181,7 @@ window.PC = (function () {
     "id": "gpu-rx7900xt",
     "name": "蓝宝石 RX 7900 XT",
     "brand": "SAPPHIRE",
-    "price": 6149,
+    "price": 6399,
     "power": 315,
     "specs": [
       {
@@ -1199,10 +1197,9 @@ window.PC = (function () {
         "value": "4K 游戏"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index1437002.shtml",
     "priceZol": 6399,
-    "pricePconline": 5899,
     "pconlineUrl": "https://product.pconline.com.cn/vga/sapphire/2097627.html"
   },
   {
@@ -2514,12 +2511,12 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-11-10T01:36:03.794Z",
+  "updatedAt": "2026-11-10T23:27:53.378Z",
   "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
-  "autoCount": 83,
+  "autoCount": 82,
   "dualCount": 18,
-  "pcFallbackCount": 3,
-  "manualCount": 5,
+  "pcFallbackCount": 2,
+  "manualCount": 6,
   "total": 88,
   "note": "价格随行情波动，仅供参考；双源(差异<15%)取均值，未匹配到公开报价的配件保留原价。",
   "priceConflicts": [

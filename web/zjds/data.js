@@ -257,7 +257,7 @@ window.PC = (function () {
     "id": "cpu-i5-14400f",
     "name": "Intel 酷睿 i5-14400F",
     "brand": "Intel",
-    "price": 999,
+    "price": 1649,
     "power": 65,
     "socket": "LGA1700",
     "memType": "DDR5",
@@ -279,7 +279,10 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "manual"
+    "priceSource": "pconline",
+    "url": "https://product.pconline.com.cn/cpu/intel/2072867.html",
+    "pricePconline": 1649,
+    "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/2072867.html"
   },
   {
     "category": "cpu",
@@ -441,8 +444,10 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
+    "priceConflict": true,
     "url": "https://detail.zol.com.cn/cpu/index1440586.shtml",
     "priceZol": 1899,
+    "pricePconline": 2299,
     "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/1710027.html"
   },
   {
@@ -1004,8 +1009,10 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
+    "priceConflict": true,
     "url": "https://detail.zol.com.cn/vga/index1857616.shtml",
     "priceZol": 5249,
+    "pricePconline": 4099,
     "pconlineUrl": "https://product.pconline.com.cn/vga/sapphire/1976107.html"
   },
   {
@@ -1151,7 +1158,7 @@ window.PC = (function () {
     "id": "gpu-rx7700xt",
     "name": "撼讯 RX 7700 XT",
     "brand": "PowerColor",
-    "price": 3699,
+    "price": 3499,
     "power": 245,
     "specs": [
       {
@@ -1167,9 +1174,10 @@ window.PC = (function () {
         "value": "2K 高刷"
       }
     ],
-    "priceSource": "zol",
+    "priceSource": "dual",
     "url": "https://detail.zol.com.cn/vga/index1968940.shtml",
     "priceZol": 3699,
+    "pricePconline": 3299,
     "pconlineUrl": "https://product.pconline.com.cn/vga/24472/2242339.html"
   },
   {
@@ -1258,7 +1266,7 @@ window.PC = (function () {
     "id": "gpu-rx9070xt",
     "name": "撼讯 RX 9070 XT",
     "brand": "PowerColor",
-    "price": 5549,
+    "price": 5799,
     "power": 304,
     "hot": true,
     "specs": [
@@ -1275,10 +1283,9 @@ window.PC = (function () {
         "value": "2K/4K"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index2141540.shtml",
     "priceZol": 5799,
-    "pricePconline": 5299,
     "pconlineUrl": "https://product.pconline.com.cn/vga/24472/2766359.html"
   },
   {
@@ -2036,7 +2043,7 @@ window.PC = (function () {
     "id": "psu-850",
     "name": "振华 LEADEX 850W 金牌",
     "brand": "SuperFlower",
-    "price": 998,
+    "price": 999,
     "power": 0,
     "watt": 850,
     "hot": true,
@@ -2056,7 +2063,7 @@ window.PC = (function () {
     ],
     "priceSource": "zol",
     "url": "https://detail.zol.com.cn/power/index1379628.shtml",
-    "priceZol": 998
+    "priceZol": 999
   },
   {
     "category": "psu",
@@ -2508,16 +2515,18 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-11-12T00:49:14.941Z",
+  "updatedAt": "2026-11-12T23:43:45.737Z",
   "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
-  "autoCount": 82,
+  "autoCount": 83,
   "dualCount": 19,
-  "pcFallbackCount": 2,
-  "manualCount": 6,
+  "pcFallbackCount": 3,
+  "manualCount": 5,
   "total": 88,
   "note": "价格随行情波动，仅供参考；双源(差异<15%)取均值，未匹配到公开报价的配件保留原价。",
   "priceConflicts": [
+    "AMD 锐龙 R7 7700: ZOL¥1899 vs PConline¥2299",
     "华硕 RTX 4090 ROG: ZOL¥23999 vs PConline¥13999",
+    "蓝宝石 RX 7800 XT: ZOL¥5249 vs PConline¥4099",
     "影驰 RTX 4060 Ti 8G: ZOL¥3499 vs PConline¥4299",
     "七彩虹 RTX 4070: ZOL¥11999 vs PConline¥4799",
     "英特尔 Arc A770 16G: ZOL¥2199 vs PConline¥3199"

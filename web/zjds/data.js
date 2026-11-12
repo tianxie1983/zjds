@@ -441,10 +441,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "priceConflict": true,
     "url": "https://detail.zol.com.cn/cpu/index1440586.shtml",
     "priceZol": 1899,
-    "pricePconline": 2299,
     "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/1710027.html"
   },
   {
@@ -1006,10 +1004,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "priceConflict": true,
     "url": "https://detail.zol.com.cn/vga/index1857616.shtml",
     "priceZol": 5249,
-    "pricePconline": 4099,
     "pconlineUrl": "https://product.pconline.com.cn/vga/sapphire/1976107.html"
   },
   {
@@ -1181,7 +1177,7 @@ window.PC = (function () {
     "id": "gpu-rx7900xt",
     "name": "蓝宝石 RX 7900 XT",
     "brand": "SAPPHIRE",
-    "price": 6399,
+    "price": 6149,
     "power": 315,
     "specs": [
       {
@@ -1197,9 +1193,10 @@ window.PC = (function () {
         "value": "4K 游戏"
       }
     ],
-    "priceSource": "zol",
+    "priceSource": "dual",
     "url": "https://detail.zol.com.cn/vga/index1437002.shtml",
     "priceZol": 6399,
+    "pricePconline": 5899,
     "pconlineUrl": "https://product.pconline.com.cn/vga/sapphire/2097627.html"
   },
   {
@@ -1987,7 +1984,7 @@ window.PC = (function () {
     "id": "psu-650",
     "name": "长城 650W 金牌",
     "brand": "GreatWall",
-    "price": 509,
+    "price": 499,
     "power": 0,
     "watt": 650,
     "specs": [
@@ -2006,7 +2003,7 @@ window.PC = (function () {
     ],
     "priceSource": "zol",
     "url": "https://detail.zol.com.cn/power/index1289953.shtml",
-    "priceZol": 509
+    "priceZol": 499
   },
   {
     "category": "psu",
@@ -2039,7 +2036,7 @@ window.PC = (function () {
     "id": "psu-850",
     "name": "振华 LEADEX 850W 金牌",
     "brand": "SuperFlower",
-    "price": 1079,
+    "price": 998,
     "power": 0,
     "watt": 850,
     "hot": true,
@@ -2059,7 +2056,7 @@ window.PC = (function () {
     ],
     "priceSource": "zol",
     "url": "https://detail.zol.com.cn/power/index1379628.shtml",
-    "priceZol": 1079
+    "priceZol": 998
   },
   {
     "category": "psu",
@@ -2511,18 +2508,16 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-11-10T23:27:53.378Z",
+  "updatedAt": "2026-11-12T00:49:14.941Z",
   "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
   "autoCount": 82,
-  "dualCount": 18,
+  "dualCount": 19,
   "pcFallbackCount": 2,
   "manualCount": 6,
   "total": 88,
   "note": "价格随行情波动，仅供参考；双源(差异<15%)取均值，未匹配到公开报价的配件保留原价。",
   "priceConflicts": [
-    "AMD 锐龙 R7 7700: ZOL¥1899 vs PConline¥2299",
     "华硕 RTX 4090 ROG: ZOL¥23999 vs PConline¥13999",
-    "蓝宝石 RX 7800 XT: ZOL¥5249 vs PConline¥4099",
     "影驰 RTX 4060 Ti 8G: ZOL¥3499 vs PConline¥4299",
     "七彩虹 RTX 4070: ZOL¥11999 vs PConline¥4799",
     "英特尔 Arc A770 16G: ZOL¥2199 vs PConline¥3199"

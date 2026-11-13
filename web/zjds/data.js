@@ -936,7 +936,7 @@ window.PC = (function () {
     "id": "gpu-4080s",
     "name": "微星 RTX 4080 SUPER",
     "brand": "MSI",
-    "price": 8549,
+    "price": 8999,
     "power": 320,
     "hot": true,
     "specs": [
@@ -953,10 +953,9 @@ window.PC = (function () {
         "value": "4K 游戏"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index1980451.shtml",
     "priceZol": 8999,
-    "pricePconline": 8099,
     "pconlineUrl": "https://product.pconline.com.cn/vga/msi/2149719.html"
   },
   {
@@ -1266,7 +1265,7 @@ window.PC = (function () {
     "id": "gpu-rx9070xt",
     "name": "撼讯 RX 9070 XT",
     "brand": "PowerColor",
-    "price": 5799,
+    "price": 5549,
     "power": 304,
     "hot": true,
     "specs": [
@@ -1283,9 +1282,10 @@ window.PC = (function () {
         "value": "2K/4K"
       }
     ],
-    "priceSource": "zol",
+    "priceSource": "dual",
     "url": "https://detail.zol.com.cn/vga/index2141540.shtml",
     "priceZol": 5799,
+    "pricePconline": 5299,
     "pconlineUrl": "https://product.pconline.com.cn/vga/24472/2766359.html"
   },
   {
@@ -2043,7 +2043,7 @@ window.PC = (function () {
     "id": "psu-850",
     "name": "振华 LEADEX 850W 金牌",
     "brand": "SuperFlower",
-    "price": 999,
+    "price": 1079,
     "power": 0,
     "watt": 850,
     "hot": true,
@@ -2063,7 +2063,7 @@ window.PC = (function () {
     ],
     "priceSource": "zol",
     "url": "https://detail.zol.com.cn/power/index1379628.shtml",
-    "priceZol": 999
+    "priceZol": 1079
   },
   {
     "category": "psu",
@@ -2515,7 +2515,7 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-11-12T23:43:45.737Z",
+  "updatedAt": "2026-11-13T23:38:48.268Z",
   "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
   "autoCount": 83,
   "dualCount": 19,

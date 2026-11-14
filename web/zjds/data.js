@@ -257,7 +257,7 @@ window.PC = (function () {
     "id": "cpu-i5-14400f",
     "name": "Intel 酷睿 i5-14400F",
     "brand": "Intel",
-    "price": 1649,
+    "price": 999,
     "power": 65,
     "socket": "LGA1700",
     "memType": "DDR5",
@@ -279,10 +279,7 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "pconline",
-    "url": "https://product.pconline.com.cn/cpu/intel/2072867.html",
-    "pricePconline": 1649,
-    "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/2072867.html"
+    "priceSource": "manual"
   },
   {
     "category": "cpu",
@@ -936,7 +933,7 @@ window.PC = (function () {
     "id": "gpu-4080s",
     "name": "微星 RTX 4080 SUPER",
     "brand": "MSI",
-    "price": 8999,
+    "price": 8549,
     "power": 320,
     "hot": true,
     "specs": [
@@ -953,9 +950,10 @@ window.PC = (function () {
         "value": "4K 游戏"
       }
     ],
-    "priceSource": "zol",
+    "priceSource": "dual",
     "url": "https://detail.zol.com.cn/vga/index1980451.shtml",
     "priceZol": 8999,
+    "pricePconline": 8099,
     "pconlineUrl": "https://product.pconline.com.cn/vga/msi/2149719.html"
   },
   {
@@ -2043,7 +2041,7 @@ window.PC = (function () {
     "id": "psu-850",
     "name": "振华 LEADEX 850W 金牌",
     "brand": "SuperFlower",
-    "price": 1079,
+    "price": 999,
     "power": 0,
     "watt": 850,
     "hot": true,
@@ -2063,7 +2061,7 @@ window.PC = (function () {
     ],
     "priceSource": "zol",
     "url": "https://detail.zol.com.cn/power/index1379628.shtml",
-    "priceZol": 1079
+    "priceZol": 999
   },
   {
     "category": "psu",
@@ -2515,12 +2513,12 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-11-13T23:38:48.268Z",
+  "updatedAt": "2026-11-14T22:29:05.538Z",
   "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
-  "autoCount": 83,
-  "dualCount": 19,
-  "pcFallbackCount": 3,
-  "manualCount": 5,
+  "autoCount": 82,
+  "dualCount": 20,
+  "pcFallbackCount": 2,
+  "manualCount": 6,
   "total": 88,
   "note": "价格随行情波动，仅供参考；双源(差异<15%)取均值，未匹配到公开报价的配件保留原价。",
   "priceConflicts": [

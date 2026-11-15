@@ -112,10 +112,9 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/cpu/index1929613.shtml",
     "priceZol": 3299,
-    "pricePconline": 3299,
     "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/1971307.html"
   },
   {
@@ -257,7 +256,7 @@ window.PC = (function () {
     "id": "cpu-i5-14400f",
     "name": "Intel 酷睿 i5-14400F",
     "brand": "Intel",
-    "price": 999,
+    "price": 1649,
     "power": 65,
     "socket": "LGA1700",
     "memType": "DDR5",
@@ -279,7 +278,10 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "manual"
+    "priceSource": "pconline",
+    "url": "https://product.pconline.com.cn/cpu/intel/2072867.html",
+    "pricePconline": 1649,
+    "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/2072867.html"
   },
   {
     "category": "cpu",
@@ -1989,7 +1991,7 @@ window.PC = (function () {
     "id": "psu-650",
     "name": "长城 650W 金牌",
     "brand": "GreatWall",
-    "price": 499,
+    "price": 510,
     "power": 0,
     "watt": 650,
     "specs": [
@@ -2008,7 +2010,7 @@ window.PC = (function () {
     ],
     "priceSource": "zol",
     "url": "https://detail.zol.com.cn/power/index1289953.shtml",
-    "priceZol": 499
+    "priceZol": 510
   },
   {
     "category": "psu",
@@ -2513,12 +2515,12 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-11-14T22:29:05.538Z",
+  "updatedAt": "2026-11-15T22:53:21.361Z",
   "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
-  "autoCount": 82,
-  "dualCount": 20,
-  "pcFallbackCount": 2,
-  "manualCount": 6,
+  "autoCount": 83,
+  "dualCount": 19,
+  "pcFallbackCount": 3,
+  "manualCount": 5,
   "total": 88,
   "note": "价格随行情波动，仅供参考；双源(差异<15%)取均值，未匹配到公开报价的配件保留原价。",
   "priceConflicts": [

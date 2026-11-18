@@ -455,7 +455,7 @@ window.PC = (function () {
     "id": "cpu-r7-9700x",
     "name": "AMD 锐龙 R7 9700X",
     "brand": "AMD",
-    "price": 2849,
+    "price": 2699,
     "power": 65,
     "socket": "AM5",
     "memType": "DDR5",
@@ -478,9 +478,10 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "zol",
+    "priceSource": "dual",
     "url": "https://detail.zol.com.cn/cpu/index2018966.shtml",
     "priceZol": 2849,
+    "pricePconline": 2549,
     "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/2248520.html"
   },
   {
@@ -935,7 +936,7 @@ window.PC = (function () {
     "id": "gpu-4080s",
     "name": "微星 RTX 4080 SUPER",
     "brand": "MSI",
-    "price": 8549,
+    "price": 8999,
     "power": 320,
     "hot": true,
     "specs": [
@@ -952,10 +953,9 @@ window.PC = (function () {
         "value": "4K 游戏"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index1980451.shtml",
     "priceZol": 8999,
-    "pricePconline": 8099,
     "pconlineUrl": "https://product.pconline.com.cn/vga/msi/2149719.html"
   },
   {
@@ -1008,10 +1008,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "priceConflict": true,
     "url": "https://detail.zol.com.cn/vga/index1857616.shtml",
     "priceZol": 5249,
-    "pricePconline": 4099,
     "pconlineUrl": "https://product.pconline.com.cn/vga/sapphire/1976107.html"
   },
   {
@@ -1037,8 +1035,10 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
+    "priceConflict": true,
     "url": "https://detail.zol.com.cn/vga/index1617201.shtml",
     "priceZol": 3499,
+    "pricePconline": 4299,
     "pconlineUrl": "https://product.pconline.com.cn/vga/galaxy/2223119.html"
   },
   {
@@ -1074,7 +1074,7 @@ window.PC = (function () {
     "id": "gpu-4070tis",
     "name": "微星 RTX 4070 Ti SUPER",
     "brand": "MSI",
-    "price": 6699,
+    "price": 6899,
     "power": 285,
     "specs": [
       {
@@ -1090,10 +1090,9 @@ window.PC = (function () {
         "value": "2K/4K"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index1978348.shtml",
     "priceZol": 6899,
-    "pricePconline": 6499,
     "pconlineUrl": "https://product.pconline.com.cn/vga/msi/2413859.html"
   },
   {
@@ -1155,7 +1154,7 @@ window.PC = (function () {
     "id": "gpu-rx7700xt",
     "name": "撼讯 RX 7700 XT",
     "brand": "PowerColor",
-    "price": 3499,
+    "price": 3699,
     "power": 245,
     "specs": [
       {
@@ -1171,10 +1170,9 @@ window.PC = (function () {
         "value": "2K 高刷"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index1968940.shtml",
     "priceZol": 3699,
-    "pricePconline": 3299,
     "pconlineUrl": "https://product.pconline.com.cn/vga/24472/2242339.html"
   },
   {
@@ -1252,8 +1250,10 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
+    "priceConflict": true,
     "url": "https://detail.zol.com.cn/vga/index1950003.shtml",
     "priceZol": 2199,
+    "pricePconline": 3199,
     "pconlineUrl": "https://product.pconline.com.cn/vga/intel/1656987.html"
   },
   {
@@ -2039,7 +2039,7 @@ window.PC = (function () {
     "id": "psu-850",
     "name": "振华 LEADEX 850W 金牌",
     "brand": "SuperFlower",
-    "price": 998,
+    "price": 999,
     "power": 0,
     "watt": 850,
     "hot": true,
@@ -2059,7 +2059,7 @@ window.PC = (function () {
     ],
     "priceSource": "zol",
     "url": "https://detail.zol.com.cn/power/index1379628.shtml",
-    "priceZol": 998
+    "priceZol": 999
   },
   {
     "category": "psu",
@@ -2511,10 +2511,10 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-11-17T01:56:29.324Z",
+  "updatedAt": "2026-11-18T01:01:34.939Z",
   "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
   "autoCount": 83,
-  "dualCount": 19,
+  "dualCount": 17,
   "pcFallbackCount": 3,
   "manualCount": 5,
   "total": 88,
@@ -2522,8 +2522,9 @@ window.PC = (function () {
   "priceConflicts": [
     "AMD 锐龙 R7 7700: ZOL¥1899 vs PConline¥2299",
     "华硕 RTX 4090 ROG: ZOL¥23999 vs PConline¥13999",
-    "蓝宝石 RX 7800 XT: ZOL¥5249 vs PConline¥4099",
-    "七彩虹 RTX 4070: ZOL¥11999 vs PConline¥4799"
+    "影驰 RTX 4060 Ti 8G: ZOL¥3499 vs PConline¥4299",
+    "七彩虹 RTX 4070: ZOL¥11999 vs PConline¥4799",
+    "英特尔 Arc A770 16G: ZOL¥2199 vs PConline¥3199"
   ]
 };
 

@@ -1926,7 +1926,7 @@ window.PC = (function () {
     "id": "cooler-cr1000",
     "name": "乔思伯 CR-1000 风冷",
     "brand": "JONSBO",
-    "price": 80,
+    "price": 73,
     "power": 3,
     "specs": [
       {
@@ -1944,14 +1944,14 @@ window.PC = (function () {
     ],
     "priceSource": "zol",
     "url": "https://detail.zol.com.cn/cooling_product/index1281413.shtml",
-    "priceZol": 80
+    "priceZol": 73
   },
   {
     "category": "psu",
     "id": "psu-650",
     "name": "长城 650W 金牌",
     "brand": "GreatWall",
-    "price": 510,
+    "price": 520,
     "power": 0,
     "watt": 650,
     "specs": [
@@ -1970,7 +1970,7 @@ window.PC = (function () {
     ],
     "priceSource": "zol",
     "url": "https://detail.zol.com.cn/power/index1289953.shtml",
-    "priceZol": 510
+    "priceZol": 520
   },
   {
     "category": "psu",
@@ -2475,7 +2475,7 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-11-19T00:29:53.348Z",
+  "updatedAt": "2026-11-20T00:44:52.945Z",
   "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
   "autoCount": 80,
   "dualCount": 0,

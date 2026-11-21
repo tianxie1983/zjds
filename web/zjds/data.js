@@ -1614,7 +1614,7 @@ window.PC = (function () {
     "id": "ssd-1t-ti5000",
     "name": "致态 TiPlus5000 1TB",
     "brand": "ZhiTai",
-    "price": 739,
+    "price": 679,
     "power": 6,
     "specs": [
       {
@@ -1632,7 +1632,7 @@ window.PC = (function () {
     ],
     "priceSource": "zol",
     "url": "https://detail.zol.com.cn/solid_state_drive/index1403186.shtml",
-    "priceZol": 739
+    "priceZol": 679
   },
   {
     "category": "ssd",
@@ -2475,7 +2475,7 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-11-21T00:04:51.211Z",
+  "updatedAt": "2026-11-21T23:23:26.605Z",
   "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
   "autoCount": 80,
   "dualCount": 0,

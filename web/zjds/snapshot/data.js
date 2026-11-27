@@ -79,10 +79,9 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/cpu/index1929615.shtml",
     "priceZol": 2499,
-    "pricePconline": 2499,
     "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/1971387.html"
   },
   {
@@ -112,10 +111,9 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/cpu/index1929613.shtml",
     "priceZol": 3299,
-    "pricePconline": 3299,
     "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/1971307.html"
   },
   {
@@ -123,7 +121,7 @@ window.PC = (function () {
     "id": "cpu-i9-14900kf",
     "name": "Intel 酷睿 i9-14900KF",
     "brand": "Intel",
-    "price": 4899,
+    "price": 4999,
     "power": 253,
     "socket": "LGA1700",
     "memType": "DDR5",
@@ -146,10 +144,9 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/cpu/index1805095.shtml",
     "priceZol": 4999,
-    "pricePconline": 4799,
     "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/1971027.html"
   },
   {
@@ -179,10 +176,9 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/cpu/index1796349.shtml",
     "priceZol": 1239,
-    "pricePconline": 1239,
     "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/1892007.html"
   },
   {
@@ -190,7 +186,7 @@ window.PC = (function () {
     "id": "cpu-r7-7800x3d",
     "name": "AMD 锐龙 R7 7800X3D",
     "brand": "AMD",
-    "price": 3199,
+    "price": 3099,
     "power": 120,
     "socket": "AM5",
     "memType": "DDR5",
@@ -213,10 +209,9 @@ window.PC = (function () {
         "value": "AM5"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/cpu/index1440585.shtml",
     "priceZol": 3099,
-    "pricePconline": 3299,
     "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/1778027.html"
   },
   {
@@ -246,10 +241,9 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/cpu/index1424741.shtml",
     "priceZol": 5499,
-    "pricePconline": 5499,
     "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/1635367.html"
   },
   {
@@ -257,7 +251,7 @@ window.PC = (function () {
     "id": "cpu-i5-14400f",
     "name": "Intel 酷睿 i5-14400F",
     "brand": "Intel",
-    "price": 1649,
+    "price": 999,
     "power": 65,
     "socket": "LGA1700",
     "memType": "DDR5",
@@ -279,17 +273,14 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "pconline",
-    "url": "https://product.pconline.com.cn/cpu/intel/2072867.html",
-    "pricePconline": 1649,
-    "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/2072867.html"
+    "priceSource": "manual"
   },
   {
     "category": "cpu",
     "id": "cpu-i5-13600kf",
     "name": "Intel 酷睿 i5-13600KF",
     "brand": "Intel",
-    "price": 2550,
+    "price": 2600,
     "power": 181,
     "socket": "LGA1700",
     "memType": "DDR5",
@@ -311,10 +302,9 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/cpu/index1429351.shtml",
     "priceZol": 2600,
-    "pricePconline": 2499,
     "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/1647467.html"
   },
   {
@@ -344,10 +334,9 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/cpu/index1929614.shtml",
     "priceZol": 2599,
-    "pricePconline": 2599,
     "pconlineUrl": "https://product.pconline.com.cn/cpu/intel/1971327.html"
   },
   {
@@ -377,10 +366,9 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/cpu/index1440587.shtml",
     "priceZol": 1549,
-    "pricePconline": 1549,
     "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/1710047.html"
   },
   {
@@ -410,10 +398,9 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/cpu/index1367038.shtml",
     "priceZol": 2249,
-    "pricePconline": 2249,
     "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/1635328.html"
   },
   {
@@ -444,10 +431,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "priceConflict": true,
     "url": "https://detail.zol.com.cn/cpu/index1440586.shtml",
     "priceZol": 1899,
-    "pricePconline": 2299,
     "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/1710027.html"
   },
   {
@@ -455,7 +440,7 @@ window.PC = (function () {
     "id": "cpu-r7-9700x",
     "name": "AMD 锐龙 R7 9700X",
     "brand": "AMD",
-    "price": 2699,
+    "price": 2849,
     "power": 65,
     "socket": "AM5",
     "memType": "DDR5",
@@ -478,10 +463,9 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/cpu/index2018966.shtml",
     "priceZol": 2849,
-    "pricePconline": 2549,
     "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/2248520.html"
   },
   {
@@ -489,7 +473,7 @@ window.PC = (function () {
     "id": "cpu-r9-9900x",
     "name": "AMD 锐龙 R9 9900X",
     "brand": "AMD",
-    "price": 3399,
+    "price": 4299,
     "power": 120,
     "socket": "AM5",
     "memType": "DDR5",
@@ -511,10 +495,7 @@ window.PC = (function () {
         "value": "DDR5"
       }
     ],
-    "priceSource": "pconline",
-    "url": "https://product.pconline.com.cn/cpu/amd/2248519.html",
-    "pricePconline": 3399,
-    "pconlineUrl": "https://product.pconline.com.cn/cpu/amd/2248519.html"
+    "priceSource": "manual"
   },
   {
     "category": "motherboard",
@@ -881,7 +862,7 @@ window.PC = (function () {
     "id": "gpu-4060",
     "name": "影驰 RTX 4060 金属大师",
     "brand": "GALAX",
-    "price": 2599,
+    "price": 2499,
     "power": 115,
     "hot": true,
     "specs": [
@@ -898,10 +879,9 @@ window.PC = (function () {
         "value": "1080P 游戏"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index1794057.shtml",
     "priceZol": 2499,
-    "pricePconline": 2699,
     "pconlineUrl": "https://product.pconline.com.cn/vga/galaxy/1867547.html"
   },
   {
@@ -909,7 +889,7 @@ window.PC = (function () {
     "id": "gpu-4070s",
     "name": "七彩虹 RTX 4070 SUPER",
     "brand": "Colorful",
-    "price": 5199,
+    "price": 5499,
     "power": 220,
     "specs": [
       {
@@ -925,10 +905,9 @@ window.PC = (function () {
         "value": "2K 游戏"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index1991186.shtml",
     "priceZol": 5499,
-    "pricePconline": 4899,
     "pconlineUrl": "https://product.pconline.com.cn/vga/colorful/2089507.html"
   },
   {
@@ -980,10 +959,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "priceConflict": true,
     "url": "https://detail.zol.com.cn/vga/index2126436.shtml",
     "priceZol": 23999,
-    "pricePconline": 13999,
     "pconlineUrl": "https://product.pconline.com.cn/vga/axgaming/1664967.html"
   },
   {
@@ -1008,10 +985,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "priceConflict": true,
     "url": "https://detail.zol.com.cn/vga/index1857616.shtml",
     "priceZol": 5249,
-    "pricePconline": 4099,
     "pconlineUrl": "https://product.pconline.com.cn/vga/sapphire/1976107.html"
   },
   {
@@ -1037,10 +1012,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "priceConflict": true,
     "url": "https://detail.zol.com.cn/vga/index1617201.shtml",
     "priceZol": 3499,
-    "pricePconline": 4299,
     "pconlineUrl": "https://product.pconline.com.cn/vga/galaxy/2223119.html"
   },
   {
@@ -1065,10 +1038,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "priceConflict": true,
     "url": "https://detail.zol.com.cn/vga/index1511407.shtml",
     "priceZol": 11999,
-    "pricePconline": 4799,
     "pconlineUrl": "https://product.pconline.com.cn/vga/colorful/1787907.html"
   },
   {
@@ -1076,7 +1047,7 @@ window.PC = (function () {
     "id": "gpu-4070tis",
     "name": "微星 RTX 4070 Ti SUPER",
     "brand": "MSI",
-    "price": 6699,
+    "price": 6899,
     "power": 285,
     "specs": [
       {
@@ -1092,10 +1063,9 @@ window.PC = (function () {
         "value": "2K/4K"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index1978348.shtml",
     "priceZol": 6899,
-    "pricePconline": 6499,
     "pconlineUrl": "https://product.pconline.com.cn/vga/msi/2413859.html"
   },
   {
@@ -1103,7 +1073,7 @@ window.PC = (function () {
     "id": "gpu-4080",
     "name": "影驰 RTX 4080",
     "brand": "GALAX",
-    "price": 9449,
+    "price": 9399,
     "power": 320,
     "specs": [
       {
@@ -1119,10 +1089,9 @@ window.PC = (function () {
         "value": "4K 游戏"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index1433634.shtml",
     "priceZol": 9399,
-    "pricePconline": 9499,
     "pconlineUrl": "https://product.pconline.com.cn/vga/galaxy/1853987.html"
   },
   {
@@ -1130,7 +1099,7 @@ window.PC = (function () {
     "id": "gpu-rx7600",
     "name": "蓝宝石 RX 7600",
     "brand": "SAPPHIRE",
-    "price": 2249,
+    "price": 2299,
     "power": 165,
     "specs": [
       {
@@ -1146,10 +1115,9 @@ window.PC = (function () {
         "value": "1080P"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index1653094.shtml",
     "priceZol": 2299,
-    "pricePconline": 2199,
     "pconlineUrl": "https://product.pconline.com.cn/vga/sapphire/1935947.html"
   },
   {
@@ -1157,7 +1125,7 @@ window.PC = (function () {
     "id": "gpu-rx7700xt",
     "name": "撼讯 RX 7700 XT",
     "brand": "PowerColor",
-    "price": 3499,
+    "price": 3699,
     "power": 245,
     "specs": [
       {
@@ -1173,10 +1141,9 @@ window.PC = (function () {
         "value": "2K 高刷"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index1968940.shtml",
     "priceZol": 3699,
-    "pricePconline": 3299,
     "pconlineUrl": "https://product.pconline.com.cn/vga/24472/2242339.html"
   },
   {
@@ -1210,7 +1177,7 @@ window.PC = (function () {
     "id": "gpu-rx7900xtx",
     "name": "蓝宝石 RX 7900 XTX",
     "brand": "SAPPHIRE",
-    "price": 9999,
+    "price": 7999,
     "power": 355,
     "specs": [
       {
@@ -1226,10 +1193,7 @@ window.PC = (function () {
         "value": "旗舰 4K"
       }
     ],
-    "priceSource": "pconline",
-    "url": "https://product.pconline.com.cn/vga/sapphire/1704007.html",
-    "pricePconline": 9999,
-    "pconlineUrl": "https://product.pconline.com.cn/vga/sapphire/1704007.html"
+    "priceSource": "manual"
   },
   {
     "category": "gpu",
@@ -1253,10 +1217,8 @@ window.PC = (function () {
       }
     ],
     "priceSource": "zol",
-    "priceConflict": true,
     "url": "https://detail.zol.com.cn/vga/index1950003.shtml",
     "priceZol": 2199,
-    "pricePconline": 3199,
     "pconlineUrl": "https://product.pconline.com.cn/vga/intel/1656987.html"
   },
   {
@@ -1264,7 +1226,7 @@ window.PC = (function () {
     "id": "gpu-rx9070xt",
     "name": "撼讯 RX 9070 XT",
     "brand": "PowerColor",
-    "price": 5549,
+    "price": 5799,
     "power": 304,
     "hot": true,
     "specs": [
@@ -1281,10 +1243,9 @@ window.PC = (function () {
         "value": "2K/4K"
       }
     ],
-    "priceSource": "dual",
+    "priceSource": "zol",
     "url": "https://detail.zol.com.cn/vga/index2141540.shtml",
     "priceZol": 5799,
-    "pricePconline": 5299,
     "pconlineUrl": "https://product.pconline.com.cn/vga/24472/2766359.html"
   },
   {
@@ -1653,7 +1614,7 @@ window.PC = (function () {
     "id": "ssd-1t-ti5000",
     "name": "致态 TiPlus5000 1TB",
     "brand": "ZhiTai",
-    "price": 739,
+    "price": 679,
     "power": 6,
     "specs": [
       {
@@ -1671,7 +1632,7 @@ window.PC = (function () {
     ],
     "priceSource": "zol",
     "url": "https://detail.zol.com.cn/solid_state_drive/index1403186.shtml",
-    "priceZol": 739
+    "priceZol": 679
   },
   {
     "category": "ssd",
@@ -1990,7 +1951,7 @@ window.PC = (function () {
     "id": "psu-650",
     "name": "长城 650W 金牌",
     "brand": "GreatWall",
-    "price": 505,
+    "price": 499,
     "power": 0,
     "watt": 650,
     "specs": [
@@ -2009,7 +1970,7 @@ window.PC = (function () {
     ],
     "priceSource": "zol",
     "url": "https://detail.zol.com.cn/power/index1289953.shtml",
-    "priceZol": 505
+    "priceZol": 499
   },
   {
     "category": "psu",
@@ -2042,7 +2003,7 @@ window.PC = (function () {
     "id": "psu-850",
     "name": "振华 LEADEX 850W 金牌",
     "brand": "SuperFlower",
-    "price": 1079,
+    "price": 998,
     "power": 0,
     "watt": 850,
     "hot": true,
@@ -2062,7 +2023,7 @@ window.PC = (function () {
     ],
     "priceSource": "zol",
     "url": "https://detail.zol.com.cn/power/index1379628.shtml",
-    "priceZol": 1079
+    "priceZol": 998
   },
   {
     "category": "psu",
@@ -2514,22 +2475,14 @@ window.PC = (function () {
   }
 ];
   const meta = {
-  "updatedAt": "2026-11-05T23:43:01.287Z",
+  "updatedAt": "2026-11-27T01:50:22.536Z",
   "source": "中关村在线(ZOL)+太平洋科技(PConline)公开参考价",
-  "autoCount": 83,
-  "dualCount": 18,
-  "pcFallbackCount": 3,
-  "manualCount": 5,
+  "autoCount": 80,
+  "dualCount": 0,
+  "pcFallbackCount": 0,
+  "manualCount": 8,
   "total": 88,
-  "note": "价格随行情波动，仅供参考；双源(差异<15%)取均值，未匹配到公开报价的配件保留原价。",
-  "priceConflicts": [
-    "AMD 锐龙 R7 7700: ZOL¥1899 vs PConline¥2299",
-    "华硕 RTX 4090 ROG: ZOL¥23999 vs PConline¥13999",
-    "蓝宝石 RX 7800 XT: ZOL¥5249 vs PConline¥4099",
-    "影驰 RTX 4060 Ti 8G: ZOL¥3499 vs PConline¥4299",
-    "七彩虹 RTX 4070: ZOL¥11999 vs PConline¥4799",
-    "英特尔 Arc A770 16G: ZOL¥2199 vs PConline¥3199"
-  ]
+  "note": "价格随行情波动，仅供参考；双源(差异<15%)取均值，未匹配到公开报价的配件保留原价。"
 };
 
   function categoryOf(key) { return categories.find(c => c.key === key); }
